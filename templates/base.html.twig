@@ -1,18 +1,23 @@
 <!DOCTYPE html>
 <html>
+
     <head>
         <meta charset="UTF-8">
         <title>{% block title %}Nantes en live{% endblock %}</title>
         {% block stylesheets %}{% endblock %}
     </head>
-    <body>
-    <head>
+
+
+    {% block header %}
+
         <h1>Nantes en live</h1>
         <nav>
             <ul>
-                <li><a href="{{ path('user_new') }}">Sign up !</a> </li>
+                <li><a href="{{ path('user_new') }}">Sign up !</a></li>
             </ul>
         </nav>
-    </head>
-    </body>
+    {% endblock %}
+
+    {% block body %}{% endblock %}
+
 </html>
