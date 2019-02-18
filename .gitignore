@@ -6,6 +6,7 @@
 /public/bundles/
 /var/
 /vendor/
+/.idea/php.xml
 ###< symfony/framework-bundle ###
 
 ###> symfony/phpunit-bridge ###
@@ -16,4 +17,3 @@
 ###> symfony/web-server-bundle ###
 /.web-server-pid
 ###< symfony/web-server-bundle ###
-/.idea/php.xml
