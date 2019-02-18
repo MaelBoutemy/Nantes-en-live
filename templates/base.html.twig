@@ -6,7 +6,13 @@
         {% block stylesheets %}{% endblock %}
     </head>
     <body>
-        {% block body %}{% endblock %}
-        {% block javascripts %}{% endblock %}
+    <head>
+        <h1>Nantes en live</h1>
+        <nav>
+            <ul>
+                <li><a href="{{ path('user_new') }}">Sign up !</a> </li>
+            </ul>
+        </nav>
+    </head>
     </body>
 </html>
