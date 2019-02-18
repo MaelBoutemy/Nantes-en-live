@@ -2,6 +2,21 @@
 <project version="4">
   <component name="ChangeListManager">
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
+    <list default="true" id="bd1750bd-be93-451d-820b-b1a287cd6010" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/HomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/HomeController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/UserController.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Entity/User.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Repository/UserRepository.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/base.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/home/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/home/index.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/user/index.html.twig" beforeDir="false" />
+    </list>
+=======
+    <list default="true" id="bd1750bd-be93-451d-820b-b1a287cd6010" name="Default Changelist" comment="" />
+>>>>>>> Stashed changes
+||||||| ancestor
     <list default="true" id="bd1750bd-be93-451d-820b-b1a287cd6010" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Controller/HomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/HomeController.php" afterDir="false" />
@@ -136,6 +151,12 @@
             <path>
               <item name="Nantes-en-live" type="b2602c69:ProjectViewProjectNode" />
               <item name="Nantes-en-live" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="Entity" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Nantes-en-live" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Nantes-en-live" type="462c0819:PsiDirectoryNode" />
               <item name="templates" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -203,6 +224,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
+<<<<<<< Updated upstream
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< Updated upstream
@@ -225,11 +247,21 @@
   <component name="ToolWindowManager">
 =======
     <option name="totallyTimeSpent" value="7650000" />
+||||||| ancestor
+    <option name="totallyTimeSpent" value="7650000" />
+=======
+    <option name="totallyTimeSpent" value="7892000" />
+>>>>>>> Stashed changes
   </component>
   <component name="ToolWindowManager">
 >>>>>>> master
     <frame x="67" y="25" width="907" height="1055" extended-state="4" />
+<<<<<<< Updated upstream
     <editor active="true" />
+>>>>>>> Stashed changes
+||||||| ancestor
+    <editor active="true" />
+=======
 >>>>>>> Stashed changes
     <layout>
       <window_info content_ui="combo" id="Project" order="0" weight="0.27642277" />
