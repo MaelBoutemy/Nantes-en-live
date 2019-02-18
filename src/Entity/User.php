@@ -27,14 +27,14 @@ class User
     private $lastName;
 
     /**
-     * @ORM\Column(type="datetime")
-     */
-    private $birthdate;
-
-    /**
      * @ORM\Column(type="string", length=255)
      */
     private $email;
+
+    /**
+     * @ORM\Column(type="date")
+     */
+    private $birthdate;
 
     /**
      * @ORM\Column(type="string", length=255)
@@ -70,18 +70,6 @@ class User
         return $this;
     }
 
-    public function getBirthdate(): ?\DateTimeInterface
-    {
-        return $this->birthdate;
-    }
-
-    public function setBirthdate(\DateTimeInterface $birthdate): self
-    {
-        $this->birthdate = $birthdate;
-
-        return $this;
-    }
-
     public function getEmail(): ?string
     {
         return $this->email;
@@ -90,6 +78,18 @@ class User
     public function setEmail(string $email): self
     {
         $this->email = $email;
+
+        return $this;
+    }
+
+    public function getBirthdate(): ?\DateTimeInterface
+    {
+        return $this->birthdate;
+    }
+
+    public function setBirthdate(\DateTimeInterface $birthdate): self
+    {
+        $this->birthdate = $birthdate;
 
         return $this;
     }
