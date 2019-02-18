@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-<<<<<<< Updated upstream
   <component name="PhpIncludePathManager">
     <include_path>
       <path value="$PROJECT_DIR$/vendor/symfony/security-guard" />
@@ -105,7 +104,4 @@
       <path value="$PROJECT_DIR$/vendor/phpdocumentor/reflection-common" />
     </include_path>
   </component>
-=======
->>>>>>> Stashed changes
-  <component name="PhpProjectSharedConfiguration" php_language_level="7.1" />
 </project>

@@ -35,6 +35,7 @@
       </file>
       <file pinned="false" current-in-tab="false">
 <<<<<<< HEAD
+<<<<<<< HEAD
         <entry file="file://$PROJECT_DIR$/src/Entity/User.php">
           <provider selected="true" editor-type-id="text-editor" />
         </entry>
@@ -57,6 +58,12 @@
               </first_editor>
               <second_editor />
 >>>>>>> Stashed changes
+=======
+        <entry file="file://$PROJECT_DIR$/templates/base.html.twig">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="270">
+              <caret line="18" selection-start-line="18" selection-end-line="18" />
+>>>>>>> master
 =======
         <entry file="file://$PROJECT_DIR$/templates/base.html.twig">
           <provider selected="true" editor-type-id="text-editor">
@@ -197,6 +204,7 @@
   </component>
   <component name="TimeTrackingManager">
 <<<<<<< HEAD
+<<<<<<< HEAD
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
     <option name="totallyTimeSpent" value="1663000" />
@@ -215,6 +223,11 @@
 >>>>>>> master
   </component>
   <component name="ToolWindowManager">
+=======
+    <option name="totallyTimeSpent" value="7650000" />
+  </component>
+  <component name="ToolWindowManager">
+>>>>>>> master
     <frame x="67" y="25" width="907" height="1055" extended-state="4" />
     <editor active="true" />
 >>>>>>> Stashed changes
