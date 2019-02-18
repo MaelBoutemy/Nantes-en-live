@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
+<<<<<<< Updated upstream
+<<<<<<< Updated upstream
     <list default="true" id="bd1750bd-be93-451d-820b-b1a287cd6010" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Controller/HomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/HomeController.php" afterDir="false" />
@@ -11,6 +13,23 @@
       <change beforePath="$PROJECT_DIR$/templates/home/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/home/index.html.twig" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/user/index.html.twig" beforeDir="false" />
     </list>
+=======
+    <list default="true" id="bd1750bd-be93-451d-820b-b1a287cd6010" name="Default Changelist" comment="" />
+>>>>>>> Stashed changes
+||||||| ancestor
+    <list default="true" id="bd1750bd-be93-451d-820b-b1a287cd6010" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/HomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/HomeController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/UserController.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Entity/User.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Repository/UserRepository.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/base.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/home/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/home/index.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/user/index.html.twig" beforeDir="false" />
+    </list>
+=======
+    <list default="true" id="bd1750bd-be93-451d-820b-b1a287cd6010" name="Default Changelist" comment="" />
+>>>>>>> Stashed changes
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -18,6 +37,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
+<<<<<<< Updated upstream
     <leaf>
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Form/UserType.php">
@@ -29,15 +49,50 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+<<<<<<< HEAD
+<<<<<<< HEAD
+        <entry file="file://$PROJECT_DIR$/src/Entity/User.php">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+<<<<<<< Updated upstream
+        <entry file="file://$PROJECT_DIR$/src/Controller/UserController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="405">
+              <caret line="27" lean-forward="true" selection-start-line="27" selection-end-line="27" />
+              <folding>
+                <element signature="e#34#54#0#PHP" expanded="true" />
+              </folding>
+=======
+        <entry file="file://$PROJECT_DIR$/README.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="225">
+                <caret line="15" column="3" lean-forward="true" selection-start-line="15" selection-start-column="3" selection-end-line="15" selection-end-column="3" />
+              </first_editor>
+              <second_editor />
+>>>>>>> Stashed changes
+=======
         <entry file="file://$PROJECT_DIR$/templates/base.html.twig">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="270">
               <caret line="18" selection-start-line="18" selection-end-line="18" />
+>>>>>>> master
+=======
+        <entry file="file://$PROJECT_DIR$/templates/base.html.twig">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="270">
+              <caret line="18" selection-start-line="18" selection-end-line="18" />
+>>>>>>> master
             </state>
           </provider>
         </entry>
       </file>
     </leaf>
+=======
+    <leaf />
+>>>>>>> Stashed changes
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -74,6 +129,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+<<<<<<< Updated upstream
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -91,6 +147,12 @@
               <item name="Nantes-en-live" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="Controller" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Nantes-en-live" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Nantes-en-live" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="Entity" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Nantes-en-live" type="b2602c69:ProjectViewProjectNode" />
@@ -114,6 +176,10 @@
         </subPane>
       </pane>
       <pane id="Scope" />
+=======
+      <pane id="Scope" />
+      <pane id="ProjectPane" />
+>>>>>>> Stashed changes
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -153,16 +219,50 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1550495022326</updated>
-      <workItem from="1550495033500" duration="559000" />
+      <workItem from="1550495033500" duration="1609000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="7650000" />
+<<<<<<< Updated upstream
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< Updated upstream
+<<<<<<< Updated upstream
+    <option name="totallyTimeSpent" value="1663000" />
+=======
+    <option name="totallyTimeSpent" value="1609000" />
+>>>>>>> Stashed changes
+=======
+<<<<<<< Updated upstream
+    <option name="totallyTimeSpent" value="578000" />
+>>>>>>> Stashed changes
   </component>
   <component name="ToolWindowManager">
+    <frame x="67" y="25" width="1853" height="1055" extended-state="6" />
+=======
+    <option name="totallyTimeSpent" value="7650000" />
+>>>>>>> master
+  </component>
+  <component name="ToolWindowManager">
+=======
+    <option name="totallyTimeSpent" value="7650000" />
+||||||| ancestor
+    <option name="totallyTimeSpent" value="7650000" />
+=======
+    <option name="totallyTimeSpent" value="7892000" />
+>>>>>>> Stashed changes
+  </component>
+  <component name="ToolWindowManager">
+>>>>>>> master
     <frame x="67" y="25" width="907" height="1055" extended-state="4" />
+<<<<<<< Updated upstream
     <editor active="true" />
+>>>>>>> Stashed changes
+||||||| ancestor
+    <editor active="true" />
+=======
+>>>>>>> Stashed changes
     <layout>
       <window_info content_ui="combo" id="Project" order="0" weight="0.27642277" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -248,8 +348,13 @@
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
+<<<<<<< Updated upstream
           <first_editor>
             <caret column="14" selection-start-column="14" selection-end-column="14" />
+=======
+          <first_editor relative-caret-position="225">
+            <caret line="15" column="3" lean-forward="true" selection-start-line="15" selection-start-column="3" selection-end-line="15" selection-end-column="3" />
+>>>>>>> Stashed changes
           </first_editor>
           <second_editor />
         </state>
