@@ -1,0 +1,22 @@
+* {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  background-color: #FAFCF8; }
+  * body {
+    width: 100%; }
+  * title {
+    display: none; }
+  * a {
+    text-decoration: none; }
+    * a:hover {
+      text-decoration: none; }
+  * .banner {
+    display: block;
+    background-image: url("/public/images/bannerNantesEnLive.gif");
+    background-size: cover;
+    width: 100%;
+    text-align: center;
+    color: #7F7E7D; }
+
+/*# sourceMappingURL=main.css.map */
