@@ -1,37 +1,27 @@
 <!DOCTYPE html>
 <html>
 
-    <head>
-        <meta charset="UTF-8">
-        <title>{% block title %}Nantes en live{% endblock %}</title>
-        {% block stylesheets %}{% endblock %}
-        <link rel="icon" type="image/x-icon" href="Images/mic.svg">
-    </head>
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}Nantes en live{% endblock %}</title>
+    <link rel="icon" type="image/x-icon" href="Images/mic.svg">
+    {% block stylesheets %} <link rel="stylesheet" href="{{ asset('/main.css') }}" type="text/css"/>{% endblock %}
 
+</head>
 
-    {% block header %}
+    <a class="banner" href="{{ path('home') }}"><h1>Nantes en live</h1></a>
 
-        {% for message in app.flashes('Compte créé avec succès!') %}
-            <div class="flash-notice">
-                {{ message }}
-            </div>
-        {% endfor %}
+    <nav>
+        <ul>
+            <li><a href="{{ path('user_new') }}">Sign up !</a></li>
+        </ul>
+    </nav>
 
-        <a href="{{ path('home') }}"><h1>Nantes en live</h1></a>
-        <nav>
-            <ul>
-                <li><a href="{{ path('user_new') }}">Sign up !</a></li>
-            </ul>
-        </nav>
-    {% endblock %}
 
     {% block body %}{% endblock %}
 
     {% block footer %}
-
-        <div>
-        </div>
-
+    {{ render(controller('App\\Controller\\NewsletterController::new')) }}
     {% endblock %}
 
 </html>

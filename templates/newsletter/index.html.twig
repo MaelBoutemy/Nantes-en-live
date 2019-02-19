@@ -1,0 +1,41 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Newsletter index{% endblock %}
+
+{% block body %}
+    <h1>Newsletter index</h1>
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>FirstName</th>
+                <th>LastName</th>
+                <th>Email</th>
+                <th>Password</th>
+                <th>actions</th>
+            </tr>
+        </thead>
+        <tbody>
+        {% for newsletter in newsletters %}
+            <tr>
+                <td>{{ newsletter.id }}</td>
+                <td>{{ newsletter.firstName }}</td>
+                <td>{{ newsletter.lastName }}</td>
+                <td>{{ newsletter.email }}</td>
+                <td>{{ newsletter.password }}</td>
+                <td>
+                    <a href="{{ path('newsletter_show', {'id': newsletter.id}) }}">show</a>
+                    <a href="{{ path('newsletter_edit', {'id': newsletter.id}) }}">edit</a>
+                </td>
+            </tr>
+        {% else %}
+            <tr>
+                <td colspan="6">no records found</td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+
+    <a href="{{ path('newsletter_new') }}">Create new</a>
+{% endblock %}

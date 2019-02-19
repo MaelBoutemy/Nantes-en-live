@@ -1,0 +1,30 @@
+@import "variables";
+
+*{
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  background-color: $white;
+  body{
+    width: 100%;
+  }
+  title{
+    display: none;
+  }
+  a{
+    text-decoration: none;
+    &:hover{
+      text-decoration: none;
+    }
+  }
+  .banner{
+    display: block;
+    background-image: url("/public/images/bannerNantesEnLive.gif");
+    background-size: cover;
+    width: 100%;
+    text-align: center;
+    color: $grey;
+  }
+
+}
+
