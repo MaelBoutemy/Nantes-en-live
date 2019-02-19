@@ -5,10 +5,17 @@
         <meta charset="UTF-8">
         <title>{% block title %}Nantes en live{% endblock %}</title>
         {% block stylesheets %}{% endblock %}
+        <link rel="icon" type="image/x-icon" href="Images/mic.svg">
     </head>
 
 
     {% block header %}
+
+        {% for message in app.flashes('Compte créé avec succès!') %}
+            <div class="flash-notice">
+                {{ message }}
+            </div>
+        {% endfor %}
 
         <h1>Nantes en live</h1>
         <nav>

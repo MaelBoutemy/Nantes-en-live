@@ -35,7 +35,9 @@ class UserController extends AbstractController
         $form->handleRequest($request);
 
         if ($form->isSubmitted() && $form->isValid()) {
+            $this->addFlash('success' ,'Compte créé avec succès!');
             $entityManager = $this->getDoctrine()->getManager();
+
             $entityManager->persist($user);
             $entityManager->flush();
 
