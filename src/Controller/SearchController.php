@@ -22,7 +22,11 @@ class SearchController extends AbstractController
     public function searchBar()
     {
         $form =  $this->createFormBuilder(NULL)
-            ->add('query', TextType::class)
+            ->add('query', TextType::class, [
+                'attr' => [
+                    'placeholder' => ' Recherche 🔎'
+                ]
+            ])
             ->add('search', SubmitType::class, [
                 'attr' => [
                     'class' => 'btn btn-primary'
