@@ -1,0 +1,9 @@
+form:
+  author:
+    label: Auteur de l'article
+  article:
+    Titre: Titre
+    Content: Contenu
+    State: Statut
+    Updtated at: mis à jour le
+    Editor: Editeur

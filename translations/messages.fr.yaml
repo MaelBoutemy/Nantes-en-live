@@ -1,0 +1,14 @@
+Title: Titre
+Updated at: Mis à jour le
+Content: Contenu de l'article
+
+Edit Article: Edition d'un article
+form:
+champ:
+label: Mon champ
+article:
+state: Etat de publication
+Update: Mis à jour
+Delete: Effacer
+
+article_ok: Article bien enregistré
