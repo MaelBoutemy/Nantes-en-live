@@ -12,11 +12,17 @@
     * a:hover {
       text-decoration: none; }
   * .banner {
-    display: block;
-    background-image: url("/public/images/bannerNantesEnLive.gif");
-    background-size: cover;
+    display: flex;
+    background-color: #171717;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
     width: 100%;
-    text-align: center;
-    color: #7F7E7D; }
+    text-align: center; }
+    * .banner h1 {
+      background: none;
+      margin: auto;
+      font-size: 10em;
+      color: #FAFCF8; }
 
 /*# sourceMappingURL=main.css.map */
