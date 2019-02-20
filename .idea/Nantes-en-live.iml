@@ -102,6 +102,9 @@
       <excludeFolder url="file://$MODULE_DIR$/vendor/symfony/yaml" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/twig/twig" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/webmozart/assert" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/weglot/simplehtmldom" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/weglot/translate-bundle" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/weglot/weglot-php" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/zendframework/zend-code" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/zendframework/zend-eventmanager" />
     </content>

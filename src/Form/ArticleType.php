@@ -3,9 +3,6 @@
 namespace App\Form;
 
 use App\Entity\Article;
-use App\Entity\Author;
-use Doctrine\ORM\EntityRepository;
-use Symfony\Bridge\Doctrine\Form\Type\EntityType;
 use Symfony\Component\Form\AbstractType;
 use Symfony\Component\Form\Extension\Core\Type\CheckboxType;
 use Symfony\Component\Form\Extension\Core\Type\DateType;
@@ -26,6 +23,7 @@ class ArticleType extends AbstractType
             ->add('content', TextareaType::class)
             ->add('author')
             ->add('updated_At',DateType::class)
+            ->add('created_At', DateType::class)
             ->add('content', TextareaType::class
             )
             ->add('state', CheckboxType::class, [

@@ -407,6 +407,21 @@
     "webmozart/assert": {
         "version": "1.4.0"
     },
+    "weglot/simplehtmldom": {
+        "version": "0.2"
+    },
+    "weglot/translate-bundle": {
+        "version": "0.6",
+        "recipe": {
+            "repo": "github.com/symfony/recipes-contrib",
+            "branch": "master",
+            "version": "0.6",
+            "ref": "0cc8c83b7c7188d1ca6162e5b99c5424756f8768"
+        }
+    },
+    "weglot/weglot-php": {
+        "version": "0.6.6"
+    },
     "zendframework/zend-code": {
         "version": "3.3.1"
     },
