@@ -47,6 +47,12 @@ class Article
      */
     private $author;
 
+    /**
+     * @ORM\ManyToOne(targetEntity="App\Entity\Admin")
+     * @ORM\JoinColumn(nullable=false)
+     */
+    private $admin;
+
     public function getId(): ?int
     {
         return $this->id;
@@ -124,5 +130,15 @@ class Article
         return $this;
     }
 
+    public function getAdmin(): ?Admin
+    {
+        return $this->admin;
+    }
 
+    public function setAdmin(?Admin $admin): self
+    {
+        $this->admin = $admin;
+
+        return $this;
+    }
 }

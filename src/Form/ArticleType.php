@@ -18,24 +18,20 @@ class ArticleType extends AbstractType
     public function buildForm(FormBuilderInterface $builder, array $options)
     {
         $builder
-            ->add('title')
-            ->add('created_At', DateType::class)
+            ->add('title', null, [
+                'attr' => [
+                    'class' => 'title'
+                ]
+            ])
+            ->add('content', TextareaType::class)
+            ->add('author')
             ->add('updated_At',DateType::class)
             ->add('content', TextareaType::class
             )
-            ->add('state', CheckboxType::class)
-           ->add('author', EntityType::class, [
-               'label' => 'form.author.label',
-               'translation_domain' => 'forms',
-               'class' => Author::class,
-               'choice_label' => 'userName',
-               'query_builder' => function (EntityRepository $er) {
-                   return $er->createQueryBuilder('a')
-                       ->orderBy('a.userName', 'ASC');
-               },
-           ])
-        ;
-
+            ->add('state', CheckboxType::class, [
+                'label'    => 'Show this entry publicly?',
+                'required' => false,
+                ]);
     }
 
     public function configureOptions(OptionsResolver $resolver)

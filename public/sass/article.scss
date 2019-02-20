@@ -1,0 +1,22 @@
+form {
+  display: flex;
+  flex-flow: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  width: 100%;
+  h1 {
+    width: 100%;
+  }
+  .form-title {
+    width: 50%;
+  }
+  .form-content {
+    width: 50%;
+  }
+  .form-author {
+    width: 100%;
+  }
+  button {
+    width: 100%;
+  }
+}

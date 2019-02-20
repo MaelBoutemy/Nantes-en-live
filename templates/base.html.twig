@@ -8,24 +8,24 @@
     {% block stylesheets %} <link rel="stylesheet" href="{{ asset('/main.css') }}" type="text/css"/>{% endblock %}
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 </head>
-{% block header %}
-    <a class="banner" href="{{ path('home') }}"><h1>Nantes en live</h1></a>
-{% endblock %}
+
     <nav>
+        <a class="banner" href="{{ path('home') }}"><img src="{{ asset('/images/banner.png') }}"></a>
         <ul>
-            <li><a href="{{ path('user_new') }}">Sign up !</a></li>
+            <li><a href="{{ path('user_new') }}">Sign in</a></li>
+            <li><a href="{{ path('user_new') }}">Sign up</a></li>
+            <li><a href="{{ path('user_new') }}">Mon compte</a></li>
+            <li><a href="{{ path('user_new') }}">Actu</a></li>
         </ul>
-        <div class="searchBar">
-            {{ render(controller('App\\Controller\\SearchController::searchBar')) }}
-        </div>
+        <div>{{ render(controller('App\\Controller\\SearchController::searchBar')) }}</div>
     </nav>
+<main>
+    {% block body %}
 
-
-    {% block body %}{% endblock %}
-
-
-    {% block footer %}
-    {{ render(controller('App\\Controller\\NewsletterController::new')) }}
     {% endblock %}
+</main>
+<footer>
+    {{ render(controller('App\\Controller\\NewsletterController::new')) }}
+</footer>
 
 </html>
