@@ -13,7 +13,8 @@ body{
     display: none;
   }
   a{
-    text-decoration: none;
+    text-decoration-line: none;
+    list-style-type: none;
     &:hover{
       text-decoration: none;
     }
@@ -26,24 +27,58 @@ body{
     height: 200px;
     .banner {
       justify-self: flex-start;
-      flex-grow: 1;
     }
       ul {
-        flex-grow: 2;
+        flex: 30%;
         flex-flow: column;
-        align-items: stretch;
+        align-self: center;
+        padding: 0 0 0 2em;
         border-left: $red solid 1px;
-      }
-      div {
-        flex-grow: 2;
-          align-self: center;
-      }
+        border-right: $red solid 1px;
+        font-family: $title;
+        font-weight: bold;
+        font-size: 1.1em;
+        li {
+          line-height: 2.5em;
+          a{
+            color: $red;
+            &:hover {
+              color: $white;
 
+            }
+          }
+        }
+      }
+      .searchBar {
+        display: flex;
+        flex: 70%;
+        .search {
+          flex: 100%;
+          align-self: end;
+          text-align: center;
+        }
+        .button-search{
+          width: 100px;
+        }
+      }
   }
   main {
     display: flex;
+
     width: 100%;
   }
 
-
+@media screen and (min-width: 960px) {
+  nav {
+  ul {
+    display: flex;
+    flex: 60%;
+    flex-flow: row-reverse;
+    justify-content: space-around;
+  }
+  .searchBar {
+    flex: 40%;
+  }
+}
+}
 
