@@ -80,7 +80,7 @@ class ArticleController extends AbstractController
             'form' => $form->createView(),
         ]);
 
-       /* $monText = $translator->trans(
+        $monText = $translator->trans(
             'mon_text',
             [],
             'messages'
@@ -89,8 +89,8 @@ class ArticleController extends AbstractController
         return $this->render('article/edit.html.twig', [
             'article' => $article,
             'form' => $form->createView(),
-            'monText' => $monText,
-        ]);*/
+            'mon_text' => $monText,
+        ]);
     }
 
     /**
