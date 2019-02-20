@@ -1,4 +1,37 @@
 {{ form_start(form) }}
-    {{ form_widget(form) }}
+
+    <div class="form-title">
+        {{ form_errors(form.title) }}
+        {{ form_label(form.title) }}
+        {{ form_widget(form.title) }}
+    </div>
+    <div class="form-content">
+        {{ form_errors(form.content) }}
+        {{ form_label(form.content) }}
+        {{ form_widget(form.content) }}
+    </div>
+    <div class="form-author">
+        {{ form_errors(form.author) }}
+        {{ form_label(form.author) }}
+        {{ form_widget(form.author) }}
+    </div>
+    <div class="form-create-date">
+        {{ form_errors(form.created_At) }}
+        {{ form_label(form.created_At) }}
+        {{ form_widget(form.created_At) }}
+    </div>
+    <div class="form-updated-date">
+        {{ form_errors(form.updated_At) }}
+        {{ form_label(form.updated_At) }}
+        {{ form_widget(form.updated_At) }}
+    </div>
+    <div class="form-state">
+        {{ form_errors(form.state) }}
+        {{ form_label(form.state) }}
+        {{ form_widget(form.state) }}
+    </div>
+
+
     <button class="btn">{{ button_label|default('Save') }}</button>
+
 {{ form_end(form) }}
