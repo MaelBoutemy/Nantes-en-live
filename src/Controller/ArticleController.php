@@ -19,7 +19,8 @@ class ArticleController extends AbstractController
     /**
      * @Route("/", name="article_index", methods={"GET"})
      */
-    public function index(ArticleRepository $articleRepository): Response
+    public function index(ArticleRepository $articleRepository,
+                          TranslatorInterface $translator): Response
     {
         return $this->render('article/index.html.twig', [
             'articles' => $articleRepository->findAll(),
@@ -34,7 +35,6 @@ class ArticleController extends AbstractController
         $article = new Article();
         $form = $this->createForm(ArticleType::class, $article);
         $form->handleRequest($request);
-
         if ($form->isSubmitted() && $form->isValid()) {
             $entityManager = $this->getDoctrine()->getManager();
             $entityManager->persist($article);
@@ -79,6 +79,18 @@ class ArticleController extends AbstractController
             'article' => $article,
             'form' => $form->createView(),
         ]);
+
+       /* $monText = $translator->trans(
+            'mon_text',
+            [],
+            'messages'
+        );
+
+        return $this->render('article/edit.html.twig', [
+            'article' => $article,
+            'form' => $form->createView(),
+            'monText' => $monText,
+        ]);*/
     }
 
     /**
