@@ -125,40 +125,69 @@ main {
   .video .about {
     text-align: center;
     position: absolute;
-    top: 15%;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(250, 252, 248, 0.5);
     font-family: "Nunito", sans-serif;
     font-size: 4em;
     color: #FAFCF8;
     text-shadow: #de6a50 1px 1px, #de6a50 2px 2px, #de6a50 3px 3px, #de6a50 4px 4px, #de6a50 5px 5px; }
     .video .about h2 {
       font-family: "Roboto", sans-serif;
-      font-weight: bold; }
+      font-weight: bold;
+      margin-top: 250px; }
 
 footer {
   display: flex;
   flex-flow: column;
-  width: 100%; }
-  footer h3 {
-    text-align: center;
-    font-family: "Roboto", sans-serif;
-    color: #de6a50; }
-  footer .footer {
+  width: 100%;
+  bottom: 0; }
+  footer .form-footer {
     display: flex;
     flex-flow: column;
-    width: 100%;
     font-family: "Nunito", sans-serif; }
-    footer .footer .form-footer {
+    footer .form-footer h3 {
+      text-align: center;
+      font-family: "Roboto", sans-serif;
+      color: #de6a50; }
+    footer .form-footer .first-name-footer {
       display: flex;
-      flex-flow: column;
-      width: 100%; }
-      footer .footer .form-footer .first-name-footer {
-        display: flex;
-        justify-content: space-around; }
-      footer .footer .form-footer .last-name-footer {
-        display: flex;
-        justify-content: space-around; }
-      footer .footer .form-footer .mail-footer {
-        display: flex;
-        justify-content: space-around; }
+      justify-content: space-around; }
+    footer .form-footer .last-name-footer {
+      display: flex;
+      justify-content: space-around; }
+    footer .form-footer .mail-footer {
+      display: flex;
+      justify-content: space-around; }
+    footer .form-footer .button-footer {
+      margin: .2em auto;
+      margin-bottom: 1em;
+      text-decoration-line: none;
+      list-style-type: none;
+      font-family: "Nunito", sans-serif;
+      background-color: #de6a50;
+      color: #000000;
+      border: #000000 solid 0.1em;
+      box-shadow: #000000 3px 3px 0, #000000 2px 2px 0, #000000 1px 1px 0;
+      transition: all .1s;
+      padding: .5em;
+      width: 100px; }
+      footer .form-footer .button-footer:hover {
+        color: #000000;
+        cursor: pointer;
+        text-decoration: none;
+        box-shadow: #000000 1px 1px 0;
+        border: #000000 solid 0.1em;
+        transform: translate3d(1px, 1px, 0); }
+
+.contact-footer {
+  display: flex; }
+
+@media screen and (min-width: 960px) {
+  .form-footer {
+    width: 50%; }
+
+  .contact-footer {
+    width: 50%; } }
 
 /*# sourceMappingURL=main.css.map */

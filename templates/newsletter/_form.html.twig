@@ -1,5 +1,5 @@
-<form class="footer">
-    <div class="form-footer">
+<form class="form-footer">
+        <h3>Newsletter</h3>
 {{ form_start(form) }}
     <div class="first-name-footer">
         {{ form_errors(form.firstName) }}
@@ -16,7 +16,7 @@
         {{ form_label(form.email) }}
         {{ form_widget(form.email) }}
     </div>
-    <button class="button">{{ button_label|default('Save') }}</button>
+    <button class="button-footer">{{ button_label|default('Save') }}</button>
 {{ form_end(form) }}
-    </div>
 </form>
+
