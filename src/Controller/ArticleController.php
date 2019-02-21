@@ -6,6 +6,7 @@ use App\Entity\Article;
 use App\Form\ArticleType;
 use App\Repository\ArticleRepository;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
+use Sensio\Bundle\FrameworkExtraBundle\Configuration\IsGranted;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
@@ -60,10 +61,12 @@ class ArticleController extends AbstractController
     }
 
     /**
-     * @Route("/{id}/edit", name="article_edit", methods={"GET","POST"})
+     * @Route("/{slug}/edit", name="article_edit", methods={"GET","POST"})
+     * @IsGranted("ROLE_ADMIN")
      */
-    public function edit(Request $request, Article $article, TranslatorInterface $translator): Response
+    public function edit(Request $request, Article $article)
     {
+        $this->denyAccessUnlessGranted('edit',$article );
         $form = $this->createForm(ArticleType::class, $article);
         $form->handleRequest($request);
 
@@ -80,17 +83,8 @@ class ArticleController extends AbstractController
             'form' => $form->createView(),
         ]);
 
-        $monText = $translator->trans(
-            'mon_text',
-            [],
-            'messages'
-        );
 
-        return $this->render('article/edit.html.twig', [
-            'article' => $article,
-            'form' => $form->createView(),
-            'mon_text' => $monText,
-        ]);
+
     }
 
     /**

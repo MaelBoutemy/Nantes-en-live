@@ -4,11 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-<<<<<<< HEAD
-    "content-hash": "3987d9121a7244ec15e11b6427f638cb",
-=======
-    "content-hash": "1c538784dcc39a738db473b7ec5020ae",
->>>>>>> master
+    "content-hash": "1e3124892aee5f081b875edb3987f59b",
     "packages": [
         {
             "name": "doctrine/annotations",
@@ -1484,33 +1480,34 @@
         },
         {
             "name": "ocramius/proxy-manager",
-            "version": "2.1.1",
+            "version": "2.2.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Ocramius/ProxyManager.git",
-                "reference": "e18ac876b2e4819c76349de8f78ccc8ef1554cd7"
+                "reference": "14b137b06b0f911944132df9d51e445a35920ab1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Ocramius/ProxyManager/zipball/e18ac876b2e4819c76349de8f78ccc8ef1554cd7",
-                "reference": "e18ac876b2e4819c76349de8f78ccc8ef1554cd7",
+                "url": "https://api.github.com/repos/Ocramius/ProxyManager/zipball/14b137b06b0f911944132df9d51e445a35920ab1",
+                "reference": "14b137b06b0f911944132df9d51e445a35920ab1",
                 "shasum": ""
             },
             "require": {
-                "ocramius/package-versions": "^1.1.1",
-                "php": "^7.1.0",
-                "zendframework/zend-code": "^3.1.0"
+                "ocramius/package-versions": "^1.1.3",
+                "php": "^7.2.0",
+                "zendframework/zend-code": "^3.3.0"
             },
             "require-dev": {
-                "couscous/couscous": "^1.5.2",
+                "couscous/couscous": "^1.6.1",
                 "ext-phar": "*",
-                "humbug/humbug": "dev-master@DEV",
-                "nikic/php-parser": "^3.0.4",
+                "humbug/humbug": "1.0.0-RC.0@RC",
+                "nikic/php-parser": "^3.1.1",
+                "padraic/phpunit-accelerator": "dev-master@DEV",
                 "phpbench/phpbench": "^0.12.2",
-                "phpstan/phpstan": "^0.6.4",
-                "phpunit/phpunit": "^5.6.4",
-                "phpunit/phpunit-mock-objects": "^3.4.1",
-                "squizlabs/php_codesniffer": "^2.7.0"
+                "phpstan/phpstan": "dev-master#856eb10a81c1d27c701a83f167dc870fd8f4236a as 0.9.999",
+                "phpstan/phpstan-phpunit": "dev-master#5629c0a1f4a9c417cb1077cf6693ad9753895761",
+                "phpunit/phpunit": "^6.4.3",
+                "squizlabs/php_codesniffer": "^2.9.1"
             },
             "suggest": {
                 "ocramius/generated-hydrator": "To have very fast object to array to object conversion for ghost objects",
@@ -1549,7 +1546,7 @@
                 "proxy pattern",
                 "service proxies"
             ],
-            "time": "2017-05-04T11:12:50+00:00"
+            "time": "2018-09-27T13:45:01+00:00"
         },
         {
             "name": "phpdocumentor/reflection-common",
@@ -2409,59 +2406,6 @@
             "time": "2018-12-05T08:06:11+00:00"
         },
         {
-            "name": "symfony/css-selector",
-            "version": "v4.2.3",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/symfony/css-selector.git",
-                "reference": "48eddf66950fa57996e1be4a55916d65c10c604a"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/symfony/css-selector/zipball/48eddf66950fa57996e1be4a55916d65c10c604a",
-                "reference": "48eddf66950fa57996e1be4a55916d65c10c604a",
-                "shasum": ""
-            },
-            "require": {
-                "php": "^7.1.3"
-            },
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "4.2-dev"
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "Symfony\\Component\\CssSelector\\": ""
-                },
-                "exclude-from-classmap": [
-                    "/Tests/"
-                ]
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Jean-François Simon",
-                    "email": "jeanfrancois.simon@sensiolabs.com"
-                },
-                {
-                    "name": "Fabien Potencier",
-                    "email": "fabien@symfony.com"
-                },
-                {
-                    "name": "Symfony Community",
-                    "homepage": "https://symfony.com/contributors"
-                }
-            ],
-            "description": "Symfony CssSelector Component",
-            "homepage": "https://symfony.com",
-            "time": "2019-01-16T20:31:39+00:00"
-        },
-        {
             "name": "symfony/debug",
             "version": "v4.2.3",
             "source": {
@@ -2677,63 +2621,6 @@
             "description": "Symfony Doctrine Bridge",
             "homepage": "https://symfony.com",
             "time": "2019-01-24T21:39:51+00:00"
-        },
-        {
-            "name": "symfony/dom-crawler",
-            "version": "v4.2.3",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/symfony/dom-crawler.git",
-                "reference": "d8476760b04cdf7b499c8718aa437c20a9155103"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/symfony/dom-crawler/zipball/d8476760b04cdf7b499c8718aa437c20a9155103",
-                "reference": "d8476760b04cdf7b499c8718aa437c20a9155103",
-                "shasum": ""
-            },
-            "require": {
-                "php": "^7.1.3",
-                "symfony/polyfill-ctype": "~1.8",
-                "symfony/polyfill-mbstring": "~1.0"
-            },
-            "require-dev": {
-                "symfony/css-selector": "~3.4|~4.0"
-            },
-            "suggest": {
-                "symfony/css-selector": ""
-            },
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "4.2-dev"
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "Symfony\\Component\\DomCrawler\\": ""
-                },
-                "exclude-from-classmap": [
-                    "/Tests/"
-                ]
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Fabien Potencier",
-                    "email": "fabien@symfony.com"
-                },
-                {
-                    "name": "Symfony Community",
-                    "homepage": "https://symfony.com/contributors"
-                }
-            ],
-            "description": "Symfony DomCrawler Component",
-            "homepage": "https://symfony.com",
-            "time": "2019-01-16T20:35:37+00:00"
         },
         {
             "name": "symfony/dotenv",
@@ -5322,181 +5209,6 @@
             "time": "2018-12-25T11:19:39+00:00"
         },
         {
-            "name": "weglot/simplehtmldom",
-            "version": "0.2",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/weglot/simple_html_dom.git",
-                "reference": "2ea1e9e308b4b5efde92dcfbf5aa2599751ad443"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/weglot/simple_html_dom/zipball/2ea1e9e308b4b5efde92dcfbf5aa2599751ad443",
-                "reference": "2ea1e9e308b4b5efde92dcfbf5aa2599751ad443",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=5.3.0"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-0": {
-                    "SimpleHtmlDom": "src/"
-                },
-                "files": [
-                    "src/simple_html_dom.php"
-                ]
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "S.C. Chen",
-                    "email": "me578022@gmail.com"
-                }
-            ],
-            "description": "Composer package that gives you access to and (unlike all the others at this time) autoloads S.C. Chen's PHP Simple HTML DOM Parser Library",
-            "homepage": "http://simplehtmldom.sourceforge.net/",
-            "keywords": [
-                "Simple",
-                "dom",
-                "html"
-            ],
-            "time": "2018-04-12T11:51:29+00:00"
-        },
-        {
-            "name": "weglot/translate-bundle",
-            "version": "0.7.2",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/weglot/translate-bundle.git",
-                "reference": "f5457f82f8bf8d98d6b68836d7a5bce35acc82e4"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/weglot/translate-bundle/zipball/f5457f82f8bf8d98d6b68836d7a5bce35acc82e4",
-                "reference": "f5457f82f8bf8d98d6b68836d7a5bce35acc82e4",
-                "shasum": ""
-            },
-            "require": {
-                "ext-mbstring": "*",
-                "php": ">=5.5",
-                "weglot/weglot-php": "^0.6"
-            },
-            "type": "symfony-bundle",
-            "autoload": {
-                "psr-4": {
-                    "Weglot\\TranslateBundle\\": ""
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Floran Pagliai",
-                    "email": "floran@weglot.com",
-                    "role": "Developer"
-                },
-                {
-                    "name": "Remy Berda",
-                    "email": "remy@weglot.com",
-                    "role": "Developer"
-                },
-                {
-                    "name": "Baptiste Leduc",
-                    "email": "baptiste@weglot.com",
-                    "homepage": "https://baptiste-leduc.now.sh/",
-                    "role": "Developer"
-                }
-            ],
-            "description": "Seamless integration of Weglot into your Symfony project",
-            "homepage": "https://weglot.com/",
-            "keywords": [
-                "Symfony2",
-                "Weglot",
-                "i18n",
-                "languages",
-                "localization",
-                "php",
-                "symfony",
-                "symfony3",
-                "symfony4",
-                "translate",
-                "translation",
-                "translator",
-                "weglot-integration"
-            ],
-            "time": "2018-07-10T10:21:21+00:00"
-        },
-        {
-            "name": "weglot/weglot-php",
-            "version": "0.6.6",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/weglot/weglot-php.git",
-                "reference": "400925c3f1b10ad1eebe97ac23f128d1909439a9"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/weglot/weglot-php/zipball/400925c3f1b10ad1eebe97ac23f128d1909439a9",
-                "reference": "400925c3f1b10ad1eebe97ac23f128d1909439a9",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=5.4",
-                "psr/cache": "^1.0",
-                "symfony/css-selector": "^2.8 || >=3.0",
-                "symfony/dom-crawler": "^2.8.1 || >=3.0",
-                "symfony/event-dispatcher": "^2.8 || >=3.0",
-                "weglot/simplehtmldom": "^0.2"
-            },
-            "require-dev": {
-                "codeception/codeception": "^2.4",
-                "vlucas/phpdotenv": "^2.4"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "Weglot\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Thomas Deneulin",
-                    "email": "thomas@weglot.com",
-                    "role": "Review"
-                },
-                {
-                    "name": "Baptiste Leduc",
-                    "email": "baptiste@weglot.com",
-                    "homepage": "https://baptiste-leduc.now.sh/",
-                    "role": "Developer"
-                }
-            ],
-            "description": "PHP library for the Weglot API",
-            "homepage": "https://weglot.com/",
-            "keywords": [
-                "Weglot",
-                "i18n",
-                "languages",
-                "localization",
-                "php",
-                "translate",
-                "translation",
-                "translator",
-                "weglot-library"
-            ],
-            "time": "2018-10-29T16:56:49+00:00"
-        },
-        {
             "name": "zendframework/zend-code",
             "version": "3.3.1",
             "source": {
@@ -5890,16 +5602,16 @@
         },
         {
             "name": "nikic/php-parser",
-            "version": "v4.2.0",
+            "version": "v4.2.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nikic/PHP-Parser.git",
-                "reference": "594bcae1fc0bccd3993d2f0d61a018e26ac2865a"
+                "reference": "5221f49a608808c1e4d436df32884cbc1b821ac0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nikic/PHP-Parser/zipball/594bcae1fc0bccd3993d2f0d61a018e26ac2865a",
-                "reference": "594bcae1fc0bccd3993d2f0d61a018e26ac2865a",
+                "url": "https://api.github.com/repos/nikic/PHP-Parser/zipball/5221f49a608808c1e4d436df32884cbc1b821ac0",
+                "reference": "5221f49a608808c1e4d436df32884cbc1b821ac0",
                 "shasum": ""
             },
             "require": {
@@ -5937,7 +5649,7 @@
                 "parser",
                 "php"
             ],
-            "time": "2019-01-12T16:31:37+00:00"
+            "time": "2019-02-16T20:54:15+00:00"
         },
         {
             "name": "symfony/browser-kit",
@@ -5995,6 +5707,59 @@
             "description": "Symfony BrowserKit Component",
             "homepage": "https://symfony.com",
             "time": "2019-01-16T21:31:25+00:00"
+        },
+        {
+            "name": "symfony/css-selector",
+            "version": "v4.2.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony/css-selector.git",
+                "reference": "48eddf66950fa57996e1be4a55916d65c10c604a"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/symfony/css-selector/zipball/48eddf66950fa57996e1be4a55916d65c10c604a",
+                "reference": "48eddf66950fa57996e1be4a55916d65c10c604a",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^7.1.3"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "4.2-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Symfony\\Component\\CssSelector\\": ""
+                },
+                "exclude-from-classmap": [
+                    "/Tests/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Jean-François Simon",
+                    "email": "jeanfrancois.simon@sensiolabs.com"
+                },
+                {
+                    "name": "Fabien Potencier",
+                    "email": "fabien@symfony.com"
+                },
+                {
+                    "name": "Symfony Community",
+                    "homepage": "https://symfony.com/contributors"
+                }
+            ],
+            "description": "Symfony CssSelector Component",
+            "homepage": "https://symfony.com",
+            "time": "2019-01-16T20:31:39+00:00"
         },
         {
             "name": "symfony/debug-bundle",
@@ -6091,6 +5856,63 @@
             ],
             "description": "A debug pack for Symfony projects",
             "time": "2018-12-10T12:11:11+00:00"
+        },
+        {
+            "name": "symfony/dom-crawler",
+            "version": "v4.2.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony/dom-crawler.git",
+                "reference": "d8476760b04cdf7b499c8718aa437c20a9155103"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/symfony/dom-crawler/zipball/d8476760b04cdf7b499c8718aa437c20a9155103",
+                "reference": "d8476760b04cdf7b499c8718aa437c20a9155103",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^7.1.3",
+                "symfony/polyfill-ctype": "~1.8",
+                "symfony/polyfill-mbstring": "~1.0"
+            },
+            "require-dev": {
+                "symfony/css-selector": "~3.4|~4.0"
+            },
+            "suggest": {
+                "symfony/css-selector": ""
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "4.2-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Symfony\\Component\\DomCrawler\\": ""
+                },
+                "exclude-from-classmap": [
+                    "/Tests/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Fabien Potencier",
+                    "email": "fabien@symfony.com"
+                },
+                {
+                    "name": "Symfony Community",
+                    "homepage": "https://symfony.com/contributors"
+                }
+            ],
+            "description": "Symfony DomCrawler Component",
+            "homepage": "https://symfony.com",
+            "time": "2019-01-16T20:35:37+00:00"
         },
         {
             "name": "symfony/maker-bundle",
@@ -6605,6 +6427,181 @@
             "description": "Symfony WebServerBundle",
             "homepage": "https://symfony.com",
             "time": "2019-01-16T20:35:37+00:00"
+        },
+        {
+            "name": "weglot/simplehtmldom",
+            "version": "0.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/weglot/simple_html_dom.git",
+                "reference": "2ea1e9e308b4b5efde92dcfbf5aa2599751ad443"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/weglot/simple_html_dom/zipball/2ea1e9e308b4b5efde92dcfbf5aa2599751ad443",
+                "reference": "2ea1e9e308b4b5efde92dcfbf5aa2599751ad443",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "SimpleHtmlDom": "src/"
+                },
+                "files": [
+                    "src/simple_html_dom.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "S.C. Chen",
+                    "email": "me578022@gmail.com"
+                }
+            ],
+            "description": "Composer package that gives you access to and (unlike all the others at this time) autoloads S.C. Chen's PHP Simple HTML DOM Parser Library",
+            "homepage": "http://simplehtmldom.sourceforge.net/",
+            "keywords": [
+                "Simple",
+                "dom",
+                "html"
+            ],
+            "time": "2018-04-12T11:51:29+00:00"
+        },
+        {
+            "name": "weglot/translate-bundle",
+            "version": "0.7.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/weglot/translate-bundle.git",
+                "reference": "f5457f82f8bf8d98d6b68836d7a5bce35acc82e4"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/weglot/translate-bundle/zipball/f5457f82f8bf8d98d6b68836d7a5bce35acc82e4",
+                "reference": "f5457f82f8bf8d98d6b68836d7a5bce35acc82e4",
+                "shasum": ""
+            },
+            "require": {
+                "ext-mbstring": "*",
+                "php": ">=5.5",
+                "weglot/weglot-php": "^0.6"
+            },
+            "type": "symfony-bundle",
+            "autoload": {
+                "psr-4": {
+                    "Weglot\\TranslateBundle\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Floran Pagliai",
+                    "email": "floran@weglot.com",
+                    "role": "Developer"
+                },
+                {
+                    "name": "Remy Berda",
+                    "email": "remy@weglot.com",
+                    "role": "Developer"
+                },
+                {
+                    "name": "Baptiste Leduc",
+                    "email": "baptiste@weglot.com",
+                    "homepage": "https://baptiste-leduc.now.sh/",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Seamless integration of Weglot into your Symfony project",
+            "homepage": "https://weglot.com/",
+            "keywords": [
+                "Symfony2",
+                "Weglot",
+                "i18n",
+                "languages",
+                "localization",
+                "php",
+                "symfony",
+                "symfony3",
+                "symfony4",
+                "translate",
+                "translation",
+                "translator",
+                "weglot-integration"
+            ],
+            "time": "2018-07-10T10:21:21+00:00"
+        },
+        {
+            "name": "weglot/weglot-php",
+            "version": "0.6.6",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/weglot/weglot-php.git",
+                "reference": "400925c3f1b10ad1eebe97ac23f128d1909439a9"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/weglot/weglot-php/zipball/400925c3f1b10ad1eebe97ac23f128d1909439a9",
+                "reference": "400925c3f1b10ad1eebe97ac23f128d1909439a9",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.4",
+                "psr/cache": "^1.0",
+                "symfony/css-selector": "^2.8 || >=3.0",
+                "symfony/dom-crawler": "^2.8.1 || >=3.0",
+                "symfony/event-dispatcher": "^2.8 || >=3.0",
+                "weglot/simplehtmldom": "^0.2"
+            },
+            "require-dev": {
+                "codeception/codeception": "^2.4",
+                "vlucas/phpdotenv": "^2.4"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Weglot\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Thomas Deneulin",
+                    "email": "thomas@weglot.com",
+                    "role": "Review"
+                },
+                {
+                    "name": "Baptiste Leduc",
+                    "email": "baptiste@weglot.com",
+                    "homepage": "https://baptiste-leduc.now.sh/",
+                    "role": "Developer"
+                }
+            ],
+            "description": "PHP library for the Weglot API",
+            "homepage": "https://weglot.com/",
+            "keywords": [
+                "Weglot",
+                "i18n",
+                "languages",
+                "localization",
+                "php",
+                "translate",
+                "translation",
+                "translator",
+                "weglot-library"
+            ],
+            "time": "2018-10-29T16:56:49+00:00"
         }
     ],
     "aliases": [],
