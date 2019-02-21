@@ -44,7 +44,7 @@ class Newsletter
 
     /**
      * @ORM\ManyToOne(targetEntity="App\Entity\Admin")
-     * @ORM\JoinColumn(nullable=false)
+     * @ORM\JoinColumn(nullable=true)
      */
     private $admin;
 

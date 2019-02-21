@@ -1,0 +1,24 @@
+.video {
+
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  .about {
+    h2 {
+      font-family: $title;
+      font-weight: bold;
+    }
+    text-align: center;
+    position: absolute;
+    top: 15%;
+    font-family: $text;
+    font-size: 4em;
+    color: $white;
+    text-shadow:  $red 1px 1px,
+                  $red 2px 2px,
+                  $red 3px 3px,
+                  $red 4px 4px,
+                  $red 5px 5px;
+  }
+}

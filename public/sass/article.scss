@@ -1,22 +1,29 @@
-form {
-  display: flex;
-  flex-flow: row;
-  flex-wrap: wrap;
-  justify-content: space-around;
+.body-article {
+  overflow-y: auto;
   width: 100%;
-  h1 {
-    width: 100%;
+  display: flex;
+  justify-content: center;
+ .index-article {
+   display: flex;
+   flex-flow: column;
+   width: 60%;
+   background-color: $white;
+   border-right: solid 2px $red;
+   border-left:  solid 2px $red;
+   padding: 2em;
+   text-align: center;
+   h2 {
+     font-family: $title;
+   }
+   p,
+   ul {
+     font-family: $text;
+   }
+   ul {
+     li {
+       list-style-type: none;
+     }
+   }
   }
-  .form-title {
-    width: 50%;
+
   }
-  .form-content {
-    width: 50%;
-  }
-  .form-author {
-    width: 100%;
-  }
-  button {
-    width: 100%;
-  }
-}
