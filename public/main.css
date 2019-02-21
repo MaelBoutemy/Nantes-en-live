@@ -9,6 +9,7 @@ body {
     margin: .2em auto;
     text-decoration-line: none;
     list-style-type: none;
+    font-family: "Nunito", sans-serif;
     background-color: #de6a50;
     color: #000000;
     border: #000000 solid 0.1em;
@@ -70,10 +71,23 @@ main {
     justify-content: center;
     align-items: center;
     flex: 70%; }
+    nav .searchBar form {
+      display: flex;
+      flex-flow: column;
+      justify-content: center;
+      align-items: center; }
     nav .searchBar .search {
-      flex: 100%; }
+      flex: 100%;
+      margin-bottom: .2em; }
     nav .searchBar .button-search {
-      width: 100px; } }
+      border: solid 0.1em #de6a50;
+      border-radius: 5px;
+      font-family: "Nunito", sans-serif;
+      color: #de6a50;
+      font-weight: bold;
+      width: 100px; }
+      nav .searchBar .button-search:hover {
+        background-color: #FAFCF8; } }
 .body-form {
   overflow-y: auto;
   width: 100%;
@@ -83,8 +97,9 @@ main {
     display: flex;
     flex-flow: column;
     background-color: #FAFCF8;
-    border-right: solid 2px #de6a50;
-    border-left: solid 2px #de6a50;
+    border: solid 2px #de6a50;
+    border-top: none;
+    padding-bottom: 1em;
     text-align: center; }
     .body-form .form h2 {
       font-family: "Roboto", sans-serif; }
@@ -93,7 +108,11 @@ main {
       padding: .2em .2em;
       font-family: "Nunito", sans-serif; }
     .body-form .form ul li {
-      list-style-type: none; }
+      list-style-type: none;
+      margin-bottom: 1em; }
+    .body-form .form *
+    .author {
+      font-style: italic; }
 
 @media screen and (min-width: 960px) {
   .form {
@@ -116,15 +135,17 @@ main {
       font-family: "Roboto", sans-serif;
       font-weight: bold; }
 
-.footer {
-  display: flex;
-  flex-flow: column;
+footer {
   width: 100%; }
-  .footer .form-footer {
+  footer .footer {
     display: flex;
     flex-flow: column;
-    justify-content: center;
-    align-items: center;
     width: 100%; }
+    footer .footer .form-footer {
+      display: flex;
+      flex-flow: column;
+      justify-content: center;
+      align-items: center;
+      width: 100%; }
 
 /*# sourceMappingURL=main.css.map */
