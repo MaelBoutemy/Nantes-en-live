@@ -3,41 +3,32 @@
 {% block title %}Article index{% endblock %}
 
 {% block body %}
-    <h1>Article index</h1>
+    <div class="body-article">
+    <div class="index-article">
 
-    <table class="table">
-        <thead>
-            <tr>
-                <th>Id</th>
-                <th>Title</th>
-                <th>Created_At</th>
-                <th>Updated_At</th>
-                <th>Content</th>
-                <th>State</th>
-                <th>actions</th>
-            </tr>
-        </thead>
-        <tbody>
+    <h2>Article index</h2>
+
+
         {% for article in articles %}
-            <tr>
-                <td>{{ article.id }}</td>
-                <td>{{ article.title }}</td>
-                <td>{{ article.createdAt ? article.createdAt|date('Y-m-d H:i:s') : '' }}</td>
-                <td>{{ article.updatedAt ? article.updatedAt|date('Y-m-d H:i:s') : '' }}</td>
-                <td>{{ article.content }}</td>
-                <td>{{ article.state }}</td>
-                <td>
+            <ul><h3>{{ article.title }}</h3>
+                <li>{{ article.content }}</li>
+                <!--<li>{{ article.createdAt ? article.createdAt|date('Y-m-d H:i:s') : '' }}</li>
+                <li>{{ article.updatedAt ? article.updatedAt|date('Y-m-d H:i:s') : '' }}</li>--!>
+
+                <li>
                     <a href="{{ path('article_show', {'id': article.id}) | trans}}">show</a>
                     <a href="{{ path('article_edit', {'id': article.id}) | trans}}">edit</a>
-                </td>
-            </tr>
+                </li>
+            </ul>
         {% else %}
             <tr>
                 <td colspan="7">no records found</td>
             </tr>
         {% endfor %}
-        </tbody>
-    </table>
+
 
     <a href="{{ path('article_new') }}">Create new</a>
+
+    </div>
+    </div>
 {% endblock %}

@@ -1,6 +1,5 @@
 @import "variables";
 
-
 body{
     width: 100%;
     display: flex;
@@ -30,6 +29,7 @@ body{
     }
       ul {
         flex: 30%;
+        min-width: 125px;
         flex-flow: column;
         align-self: center;
         padding: 0 0 0 2em;
@@ -51,14 +51,15 @@ body{
       }
       .searchBar {
         display: flex;
+        justify-content: center;
+        align-items: center;
         flex: 70%;
         .search {
           flex: 100%;
-          align-self: end;
-          text-align: center;
         }
         .button-search{
           width: 100px;
+          margin: 0 auto;
         }
       }
   }

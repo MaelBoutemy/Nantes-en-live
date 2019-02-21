@@ -14,9 +14,8 @@ return [
     Symfony\Bundle\DebugBundle\DebugBundle::class => ['dev' => true, 'test' => true],
     Symfony\Bundle\MakerBundle\MakerBundle::class => ['dev' => true],
     Symfony\Bundle\WebServerBundle\WebServerBundle::class => ['dev' => true],
-<<<<<<< HEAD
-    Weglot\TranslateBundle\WeglotTranslateBundle::class => ['all' => true],
-=======
+
+
     Doctrine\Bundle\FixturesBundle\DoctrineFixturesBundle::class => ['dev' => true, 'test' => true],
->>>>>>> master
+
 ];

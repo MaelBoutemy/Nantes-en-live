@@ -23,7 +23,7 @@ class ArticleController extends AbstractController
                           TranslatorInterface $translator): Response
     {
         return $this->render('article/index.html.twig', [
-            'articles' => $articleRepository->findAll(),
+            'articles' => $articleRepository->findLastArticle(),
         ]);
     }
 

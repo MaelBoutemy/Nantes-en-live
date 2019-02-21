@@ -32,7 +32,7 @@ class Article
     private $updated_At;
 
     /**
-     * @ORM\Column(type="string", length=255)
+     * @ORM\Column(type="string", length=5000)
      */
     private $content;
 
@@ -49,7 +49,7 @@ class Article
 
     /**
      * @ORM\ManyToOne(targetEntity="App\Entity\Admin")
-     * @ORM\JoinColumn(nullable=false)
+     * @ORM\JoinColumn(nullable=true)
      */
     private $admin;
 

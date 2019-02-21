@@ -9,46 +9,45 @@ use Doctrine\Bundle\FixturesBundle\Fixture;
 use Doctrine\Common\DataFixtures\DependentFixtureInterface;
 use Doctrine\Common\Persistence\ObjectManager;
 
-class AuthorFixtures extends Fixture implements DependentFixtureInterface
+class AuthorFixtures extends Fixture
 {
+    const MICHEL_AUTHOR_REFERENCE = 'michel';
 
-    private $faker;
-
-    public function __construct()
-    {
-        $this->faker = $faker = Faker\Factory::create('fr_FR');
-    }
     public function load(ObjectManager $manager)
     {
-        // On configure dans quelles langues nous voulons nos données
-        $faker = $this->faker;
-
-        for ($i = 0; $i < 10; $i++) {
-
 
         $author = new Author();
 
-        $author->setFirstName($faker->firstName);
-        $author->setLastName($faker->lastName);
-        $author->setUserName($faker->name);
-        $author->setEmail($faker->name);
-        $author->setEmail($faker->email);
-        $author->setPassword($faker->password);
+        $author->setFirstName('michel');
+        $author->setLastName('dupont');
+        $author->setUserName('M.dupont');
+        $author->setEmail('mimi@dudu.fr');
+        $author->setPassword('mimi');
 
         $manager->persist($author);
-        }
+
+        $author = new Author();
+        $author->setFirstName('carole');
+        $author->setLastName('leclerc');
+        $author->setUserName('Mme.Leclerc');
+        $author->setEmail('lolole@lele.fr');
+        $author->setPassword('lele');
+
+        $manager->persist($author);
+
+        $author = new Author();
+        $author->setFirstName('pierre');
+        $author->setLastName('bout');
+        $author->setUserName('M.bout');
+        $author->setEmail('boubou@piepie.fr');
+        $author->setPassword('boubou');
+
+        $manager->persist($author);
+
 
         $manager->flush();
+
+        $this->addReference(self::MICHEL_AUTHOR_REFERENCE, $author);
     }
 
-    /**
-     * This method must return an array of fixtures classes
-     * on which the implementing class depends on
-     *
-     * @return array
-     */
-    public function getDependencies()
-    {
-        // TODO: Implement getDependencies() method.
-    }
 }

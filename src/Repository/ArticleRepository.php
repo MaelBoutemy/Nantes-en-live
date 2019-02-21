@@ -22,7 +22,7 @@ class ArticleRepository extends ServiceEntityRepository
     public function findLastArticle()
     {
         return $this->createQueryBuilder('a')
-            ->setMaxResults(3)
+            ->orderBy('a.updated_At', 'DESC')
             ->getQuery()
             ->getResult();
     }
