@@ -19,7 +19,6 @@ class NewsletterFixtures extends Fixture implements DependentFixtureInterface
 
         $newsletter->setFirstName('michel');
         $newsletter->setLastName('dupont');
-        $newsletter->setPassword('mimi');
         $newsletter->setEmail('mimi@dudu.fr');
         $newsletter->setAuthor($this->getReference(AuthorFixtures::MICHEL_AUTHOR_REFERENCE));
 

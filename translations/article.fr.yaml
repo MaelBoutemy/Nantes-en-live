@@ -1,0 +1,8 @@
+article:
+    title: Titre
+    content: Contenu
+    author: Auteur
+    state: Statut
+    created at: crée le
+    updtated at: mis à jour le
+
