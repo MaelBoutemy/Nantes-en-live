@@ -3,6 +3,9 @@
 {% block title %}Edit Article{% endblock %}
 
 {% block body %}
+<div class="body-form">
+    <div class="form">
+
     <h1>Edit Article</h1>
 
     {{ include('article/_form.html.twig', {'button_label': 'Update' | trans}) }}
@@ -11,4 +14,7 @@
         {{ 'back to list from' | trans({'%param%': 'Article'}) }}</a>
 
     {{ include('article/_delete_form.html.twig') }}
+
+        <div>
+            <div>
 {% endblock %}

@@ -32,11 +32,6 @@ class Newsletter
     private $email;
 
     /**
-     * @ORM\Column(type="string", length=255)
-     */
-    private $password;
-
-    /**
      * @ORM\ManyToOne(targetEntity="App\Entity\Author", inversedBy="newsletter_update")
      * @ORM\JoinColumn(nullable=false)
      */
@@ -85,18 +80,6 @@ class Newsletter
     public function setEmail(string $email): self
     {
         $this->email = $email;
-
-        return $this;
-    }
-
-    public function getPassword(): ?string
-    {
-        return $this->password;
-    }
-
-    public function setPassword(string $password): self
-    {
-        $this->password = $password;
 
         return $this;
     }

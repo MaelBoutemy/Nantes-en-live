@@ -15,7 +15,6 @@ class NewsletterType extends AbstractType
             ->add('firstName')
             ->add('lastName')
             ->add('email')
-            ->add('password')
         ;
     }
 

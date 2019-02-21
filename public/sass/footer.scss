@@ -1,0 +1,27 @@
+.footer {
+  display: flex;
+  flex-flow: column;
+  width: 100%;
+  .form-footer {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    .first-name-footer {
+
+    }
+    .last-name-footer {
+
+    }
+    .mail-footer {
+
+    }
+    .button-footer {
+
+    }
+  }
+  .contact-footer {
+
+  }
+}

@@ -4,8 +4,8 @@
 
 {% block body %}
 
-<div class="body-article">
-    <div class="index-article">
+<div class="body-form">
+    <div class="form">
     <h2>{{ article.title }}</h2>
 
     <p>{{ article.content }}</p>
@@ -14,11 +14,9 @@
 
     <p>Updated_At : {{ article.updatedAt ? article.updatedAt|date('Y-m-d H:i:s') : '' }}</p>
 
-    <p>{{ article.state }}</p>
+    <a class="button" href="{{ path('article_index') }}">back to list</a>
 
-    <a href="{{ path('article_index') }}">back to list</a>
-
-    <a href="{{ path('article_edit', {'id': article.id}) }}">edit</a>
+    <a class="button" href="{{ path('article_edit', {'id': article.id}) }}">edit</a>
 
     {{ include('article/_delete_form.html.twig') }}
 
