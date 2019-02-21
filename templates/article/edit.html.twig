@@ -10,7 +10,7 @@
 
     {{ include('article/_form.html.twig', {'button_label': 'Update' | trans}) }}
 
-    <a href="{{ path('article_index') }}">
+    <a class="button" href="{{ path('article_index') }}">
         {{ 'back to list from' | trans({'%param%': 'Article'}) }}</a>
 
     {{ include('article/_delete_form.html.twig') }}
