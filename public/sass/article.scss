@@ -7,8 +7,9 @@
    display: flex;
    flex-flow: column;
    background-color: $white;
-   border-right: solid 2px $red;
-   border-left:  solid 2px $red;
+   border: solid 2px $red;
+   border-top: none;
+   padding-bottom: 1em;
    text-align: center;
    h2 {
      font-family: $title;
@@ -21,8 +22,12 @@
    ul {
      li {
        list-style-type: none;
+       margin-bottom: 1em;
      }
    }
+ .author {
+   font-style: italic;
+       }
   }
 
   }

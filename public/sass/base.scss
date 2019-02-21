@@ -11,6 +11,7 @@ body{
       margin: .2em auto;
       text-decoration-line: none;
       list-style-type: none;
+      font-family: $text;
       background-color: $red;
       color: $black;
       border: $black solid .1em;
@@ -65,7 +66,8 @@ body{
     .searchBar {
       display: none;
     }
-  }
+    }
+
   main {
     display: flex;
 
@@ -85,12 +87,29 @@ body{
       display: flex;
       justify-content: center;
       align-items: center;
+
       flex: 70%;
+      form {
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+        align-items: center;
+
+      }
       .search {
         flex: 100%;
+        margin-bottom: .2em;
       }
       .button-search{
+        border:solid .1em $red;
+        border-radius: 5px;
+        font-family: $text;
+        color: $red;
+        font-weight: bold;
         width: 100px;
+        &:hover {
+          background-color: $white;
+        }
         }
       }
     }

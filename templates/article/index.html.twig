@@ -5,18 +5,11 @@
 {% block body %}
 
 
-    {% if is_granted('IS_AUTHENTICATED_FULLY') %}
-
-        <p>Bonjour {{ app.user.email }}</p>
-
-        <p><a href="{{ path('logout_route') }}">Se déconnecter...</a></p>
-    {% else %}
-        <p><a href="{{ path('app_login') }}">Se connecter</a></p>
-    {% endif %}
 
 
-    <div class="body-article">
-    <div class="index-article">
+
+    <div class="body-form">
+    <div class="form">
 
 
 
@@ -27,17 +20,18 @@
         {% for article in articles %}
             <ul><h3>{{ article.title }}</h3>
                 <li>{{ article.content }}</li>
-                -<li>{{ article.createdAt ? article.createdAt|date('Y-m-d H:i:s') : '' }}</li>
-                <li>{{ article.updatedAt ? article.updatedAt|date('Y-m-d H:i:s') : '' }}</li>
+                <li class="author">{{ article.author.userName }}</li>
+                <!--<li>{{ article.createdAt ? article.createdAt|date('Y-m-d H:i:s') : '' }}</li>
+                <li>{{ article.updatedAt ? article.updatedAt|date('Y-m-d H:i:s') : '' }}</li>--!>
 
-                <a href="{{ path('article_show', {'id': article.id}) }}">show</a>
+                <a class="button" href="{{ path('article_show', {'id': article.id}) }}">show</a>
                 {% if is_granted('ROLE_ADMIN') %}
-                    <a href="{{ path('article_edit', {'slug': article.slug}) }}">edit</a>
+                    <a class="button" href="{{ path('article_edit', {'slug': article.slug}) }}">edit</a>
                 {% endif %}
 
                 <li>
-                    <a href="{{ path('article_show', {'id': article.id}) | trans}}">show</a>
-                    <a href="{{ path('article_edit', {'id': article.id}) | trans}}">edit</a>
+                    <a class="button" href="{{ path('article_show', {'id': article.id}) | trans}}">show</a>
+
                 </li>
             </ul>
         {% else %}

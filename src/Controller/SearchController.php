@@ -29,7 +29,7 @@ class SearchController extends AbstractController
             ])
             ->add('search', SubmitType::class, [
                 'attr' => [
-                    'class' => 'btn btn-primary'
+                    'class' => 'button-search'
                 ]
             ])
             ->getForm();
