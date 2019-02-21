@@ -37,7 +37,7 @@ class Article
     private $content;
 
     /**
-     * @ORM\Column(type="integer", nullable=true)
+     * @ORM\Column(type="boolean", nullable=false)
      */
     private $state;
 
@@ -49,7 +49,7 @@ class Article
 
     /**
      * @ORM\ManyToOne(targetEntity="App\Entity\Admin")
-     * @ORM\JoinColumn(nullable=true)
+     * @ORM\JoinColumn(nullable=false)
      */
     private $admin;
 
@@ -106,12 +106,12 @@ class Article
         return $this;
     }
 
-    public function getState(): ?int
+    public function getState(): ?bool
     {
         return $this->state;
     }
 
-    public function setState(int $state): self
+    public function setState(bool $state): self
     {
         $this->state = $state;
 

@@ -1,22 +1,21 @@
-.body-article {
+.body-form {
   overflow-y: auto;
   width: 100%;
   display: flex;
   justify-content: center;
- .index-article {
+ .form {
    display: flex;
    flex-flow: column;
-   width: 60%;
    background-color: $white;
    border-right: solid 2px $red;
    border-left:  solid 2px $red;
-   padding: 2em;
    text-align: center;
    h2 {
      font-family: $title;
    }
    p,
    ul {
+     padding: .2em .2em;
      font-family: $text;
    }
    ul {
@@ -27,3 +26,11 @@
   }
 
   }
+
+@media screen and (min-width: 960px){
+  .form {
+    padding: 2em;
+    width: 60%;
+  }
+
+}
