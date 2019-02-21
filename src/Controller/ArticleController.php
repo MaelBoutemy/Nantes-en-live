@@ -31,7 +31,7 @@ class ArticleController extends AbstractController
     /**
      * @Route("/new", name="article_new", methods={"GET","POST"})
      */
-    public function new(Request $request): Response
+    public function new(Request $request, TranslatorInterface $translator): Response
     {
         $article = new Article();
         $form = $this->createForm(ArticleType::class, $article);
@@ -43,6 +43,8 @@ class ArticleController extends AbstractController
 
             return $this->redirectToRoute('article_index');
         }
+
+        $translated = $translator->trans('title', [], 'article');
 
         return $this->render('article/new.html.twig', [
             'article' => $article,

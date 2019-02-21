@@ -8,7 +8,7 @@ form:
     label: Mon champ
   article:
     state: Etat de publication
-
+    title: Titre
 article_ok: Article bien enregistré
 
 mon_text: |

@@ -108,3 +108,4 @@ class Newsletter
         return $this;
     }
 }
+

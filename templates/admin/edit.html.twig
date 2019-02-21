@@ -8,9 +8,10 @@
 
     <h1>Edit Admin</h1>
 
-    {{ include('admin/_form.html.twig', {'button_label': 'Update'}) }}
+    {{ include('admin/_form.html.twig', {'button_label': 'Update'})  }}
 
-    <a href="{{ path('admin_index') }}">back to list</a>
+    <a href="{{ path('admin_index') }}">
+        {{ 'back to list form' | trans({'%param': 'Article'}) }}</a>
 
     {{ include('admin/_delete_form.html.twig') }}
         <div>
