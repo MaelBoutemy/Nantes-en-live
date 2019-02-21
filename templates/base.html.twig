@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html>
-
 <head>
     <meta charset="UTF-8">
     <title>{% block title %}Nantes en live{% endblock %}</title>
@@ -16,17 +15,17 @@
             <li><a href="{{ path('user_new') }}">Sign in</a></li>
             <li><a href="{{ path('user_new') }}">Sign up</a></li>
             <li><a href="{{ path('user_new') }}">Mon compte</a></li>
-            <li><a href="{{ path('user_new') }}">Actu</a></li>
+            <li><a href="{{ path('article_index') }}">Actu</a></li>
         </ul>
-       <!-- <div class="about">Nantes en live, le site d'actu musicale nantaise</div> --!>
         <div class="searchBar">{{ render(controller('App\\Controller\\SearchController::searchBar')) }}</div>
     </nav>
 <main>
     {% block body %}
     {% endblock %}
 </main>
+{% block footer %}
 <footer>
     {{ render(controller('App\\Controller\\NewsletterController::new')) }}
 </footer>
-
+{% endblock %}
 </html>

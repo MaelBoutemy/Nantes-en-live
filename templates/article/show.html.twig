@@ -3,40 +3,25 @@
 {% block title %}Article{% endblock %}
 
 {% block body %}
-    <h1>Article</h1>
 
-    <table class="table">
-        <tbody>
-            <tr>
-                <th>Id</th>
-                <td>{{ article.id }}</td>
-            </tr>
-            <tr>
-                <th>Title</th>
-                <td>{{ article.title }}</td>
-            </tr>
-            <tr>
-                <th>Created_At</th>
-                <td>{{ article.createdAt ? article.createdAt|date('Y-m-d H:i:s') : '' }}</td>
-            </tr>
-            <tr>
-                <th>Updated_At</th>
-                <td>{{ article.updatedAt ? article.updatedAt|date('Y-m-d H:i:s') : '' }}</td>
-            </tr>
-            <tr>
-                <th>Content</th>
-                <td>{{ article.content }}</td>
-            </tr>
-            <tr>
-                <th>State</th>
-                <td>{{ article.state }}</td>
-            </tr>
-        </tbody>
-    </table>
+<div class="body-article">
+    <div class="index-article">
+    <h2>{{ article.title }}</h2>
+
+    <p>{{ article.content }}</p>
+
+    <p>Created_At : {{ article.createdAt ? article.createdAt|date('Y-m-d H:i:s') : '' }}</p>
+
+    <p>Updated_At : {{ article.updatedAt ? article.updatedAt|date('Y-m-d H:i:s') : '' }}</p>
+
+    <p>{{ article.state }}</p>
 
     <a href="{{ path('article_index') }}">back to list</a>
 
     <a href="{{ path('article_edit', {'id': article.id}) }}">edit</a>
 
     {{ include('article/_delete_form.html.twig') }}
+
+        <div>
+            <div>
 {% endblock %}
