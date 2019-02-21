@@ -110,8 +110,7 @@ main {
     .body-form .form ul li {
       list-style-type: none;
       margin-bottom: 1em; }
-    .body-form .form *
-    .author {
+    .body-form .form .author {
       font-style: italic; }
 
 @media screen and (min-width: 960px) {
@@ -136,16 +135,30 @@ main {
       font-weight: bold; }
 
 footer {
+  display: flex;
+  flex-flow: column;
   width: 100%; }
+  footer h3 {
+    text-align: center;
+    font-family: "Roboto", sans-serif;
+    color: #de6a50; }
   footer .footer {
     display: flex;
     flex-flow: column;
-    width: 100%; }
+    width: 100%;
+    font-family: "Nunito", sans-serif; }
     footer .footer .form-footer {
       display: flex;
       flex-flow: column;
-      justify-content: center;
-      align-items: center;
       width: 100%; }
+      footer .footer .form-footer .first-name-footer {
+        display: flex;
+        justify-content: space-around; }
+      footer .footer .form-footer .last-name-footer {
+        display: flex;
+        justify-content: space-around; }
+      footer .footer .form-footer .mail-footer {
+        display: flex;
+        justify-content: space-around; }
 
 /*# sourceMappingURL=main.css.map */

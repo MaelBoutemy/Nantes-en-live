@@ -12,8 +12,12 @@
     <nav>
         <a class="banner" href="{{ path('home') }}"><img src="{{ asset('/images/banner.png') }}"></a>
         <ul>
-            <li><a href="{{ path('user_new') }}">Sign in</a></li>
-            <li><a href="{{ path('user_new') }}">Sign up</a></li>
+            <li><a href="{{ path('user_new') }}">S'inscrire</a></li>
+            <li><   {% if is_granted('IS_AUTHENTICATED_FULLY') %}
+                    <a href="{{ path('logout') }}">Se déconnecter</a>
+                {% else %}
+                    <a href="{{ path('app_login') }}">Se connecter</a>
+                {% endif %}</li>
             <li><a href="{{ path('user_new') }}">Mon compte</a></li>
             <li><a href="{{ path('article_index') }}">Actu</a></li>
         </ul>
