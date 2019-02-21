@@ -2,20 +2,16 @@ footer {
   display: flex;
   flex-flow: column;
   width: 100%;
-  h3 {
-    text-align: center;
-    font-family: $title;
-    color: $red;
-  }
-.footer {
-  display: flex;
-  flex-flow: column;
-  width: 100%;
-  font-family: $text;
+  bottom: 0;
   .form-footer {
     display: flex;
     flex-flow: column;
-    width: 100%;
+    font-family: $text;
+    h3 {
+      text-align: center;
+      font-family: $title;
+      color: $red;
+    }
     .first-name-footer {
       display: flex;
       justify-content: space-around;
@@ -29,11 +25,39 @@ footer {
       justify-content: space-around;
     }
     .button-footer {
-
+      margin: .2em auto;
+      margin-bottom: 1em;
+      text-decoration-line: none;
+      list-style-type: none;
+      font-family: $text;
+      background-color: $red;
+      color: $black;
+      border: $black solid .1em;
+      box-shadow: $black 3px 3px 0, $black 2px 2px 0, $black 1px 1px 0 ;
+      transition: all .1s;
+      padding: .5em;
+      width: 100px;
+      &:hover{
+        color: $black;
+        cursor: pointer;
+        text-decoration: none;
+        box-shadow: $black 1px 1px 0;
+        border: $black solid .1em;
+        transform: translate3d(1px, 1px, 0);
+      }
     }
   }
 }
   .contact-footer {
+    display: flex;
+  }
 
+
+@media screen and (min-width: 960px){
+  .form-footer{
+    width: 50%;
+  }
+  .contact-footer {
+    width: 50%;
   }
 }

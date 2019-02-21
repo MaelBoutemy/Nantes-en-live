@@ -13,7 +13,7 @@
         <a class="banner" href="{{ path('home') }}"><img src="{{ asset('/images/banner.png') }}"></a>
         <ul>
             <li><a href="{{ path('user_new') }}">S'inscrire</a></li>
-            <li><   {% if is_granted('IS_AUTHENTICATED_FULLY') %}
+            <li>{% if is_granted('IS_AUTHENTICATED_FULLY') %}
                     <a href="{{ path('logout') }}">Se déconnecter</a>
                 {% else %}
                     <a href="{{ path('app_login') }}">Se connecter</a>
@@ -30,6 +30,9 @@
 {% block footer %}
 <footer>
     {{ render(controller('App\\Controller\\NewsletterController::new')) }}
+    <div class="contact-footer">
+
+    </div>
 </footer>
 {% endblock %}
 </html>

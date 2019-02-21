@@ -8,10 +8,13 @@
     h2 {
       font-family: $title;
       font-weight: bold;
+      margin-top: 250px;
     }
     text-align: center;
     position: absolute;
-    top: 15%;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(250, 252, 248, 0.50);
     font-family: $text;
     font-size: 4em;
     color: $white;
