@@ -3,8 +3,8 @@
 {% block title %}Article index{% endblock %}
 
 {% block body %}
-    <div class="body-article">
-    <div class="index-article">
+    <div class="body-form">
+    <div class="form">
 
     <h2>Article index</h2>
 
@@ -27,7 +27,7 @@
         {% endfor %}
 
 
-    <a href="{{ path('article_new') }}">Create new</a>
+    <a class="button" href="{{ path('article_new') }}">Create new</a>
 
     </div>
     </div>
