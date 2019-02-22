@@ -5,6 +5,11 @@ parameters:
     # You should not need to change this value.
     env(DATABASE_URL): ''
 
+stof_doctrine_extensions:
+    default_locale: fr_FR
+    orm:
+        default:
+            sluggable: true
 doctrine:
     dbal:
         # configure these for your database server
@@ -27,3 +32,4 @@ doctrine:
                 dir: '%kernel.project_dir%/src/Entity'
                 prefix: 'App\Entity'
                 alias: App
+

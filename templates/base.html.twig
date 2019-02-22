@@ -14,7 +14,7 @@
         <ul>
             <li><a href="{{ path('user_new') }}">S'inscrire</a></li>
             <li>{% if is_granted('IS_AUTHENTICATED_FULLY') %}
-                    <a href="{{ path('logout') }}">Se déconnecter</a>
+                    <a href="{{ path('logout_route') }}">Se déconnecter</a>
                 {% else %}
                     <a href="{{ path('app_login') }}">Se connecter</a>
                 {% endif %}</li>
