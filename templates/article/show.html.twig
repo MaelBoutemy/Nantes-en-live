@@ -8,9 +8,9 @@
 
     <p>{{ article.content }}</p>
 
-    <p>Created_At : {{ article.createdAt ? article.createdAt|date('Y-m-d H:i:s') : '' }}</p>
+    <p>Created_At : {{ article.createdAt ? article.createdAt|date('Y-m-d H:i:s') : '' | trans }}</p>
 
-    <p>Updated_At : {{ article.updatedAt ? article.updatedAt|date('Y-m-d H:i:s') : '' }}</p>
+    <p>Updated_At : {{ article.updatedAt ? article.updatedAt|date('Y-m-d H:i:s') : '' | trans }}</p>
 
     <a class="button" href="{{ path('article_index') }}">back to list</a>
 
