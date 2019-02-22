@@ -91,14 +91,15 @@ main {
 .body-form {
   overflow-y: auto;
   width: 100%;
+  min-height: calc(100vh - 400px);
   display: flex;
   justify-content: center; }
   .body-form .form {
     display: flex;
     flex-flow: column;
     background-color: #FAFCF8;
-    border: solid 2px #de6a50;
-    border-top: none;
+    border-right: solid 2px #de6a50;
+    border-left: solid 2px #de6a50;
     padding-bottom: 1em;
     text-align: center; }
     .body-form .form h2 {
@@ -117,6 +118,9 @@ main {
   .form {
     padding: 2em;
     width: 60%; } }
+.html {
+  overflow-y: hidden; }
+
 .video {
   position: absolute;
   display: flex;

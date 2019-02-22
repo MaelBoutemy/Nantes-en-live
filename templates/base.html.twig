@@ -10,10 +10,9 @@
 
 </head>
 
-    <nav>
+<nav>
         <a class="banner" href="{{ path('home') }}"><img src="{{ asset('/images/banner.png') }}"></a>
         <ul>
-            <li><a href="{{ path('user_new') }}">S'inscrire</a></li>
             <li>{% if is_granted('IS_AUTHENTICATED_FULLY') %}
                     <a href="{{ path('logout_route') }}">Se déconnecter</a>
                 {% else %}
@@ -33,8 +32,6 @@
         </ul>
         <div class="searchBar">{{ render(controller('App\\Controller\\SearchController::searchBar')) }}</div>
     </nav>
-
-
 
 <main>
     {% block body %}

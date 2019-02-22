@@ -18,20 +18,8 @@
                 <a class="button" href="{{ path('article_edit') }}">edit</a>
             {% endif %}
         </ul>
-        <tr>
-            <td colspan="7">no records found</td>
-        </tr>
-
-                <li>
-                    {% if is_granted('ROLE_ADMIN') %}
-                    <a class="button" href="{{ path('article_show', {'id': article.id}) | trans}}">show</a>
-                    {% endif %}
-                </li>
-            </ul>
         {% else %}
-            <tr>
-                <td colspan="7">no records found</td>
-            </tr>
+                <p colspan="7">no records found</p>
         {% endfor %}
 
 
