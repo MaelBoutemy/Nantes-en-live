@@ -15,7 +15,7 @@
 
             <a class="button" href="{{ path('article_show', {'id': article.id}) }}">show</a>
             {% if is_granted('ROLE_ADMIN') %}
-                <a class="button" href="{{ path('article_edit', {'slug': article.slug}) }}">edit</a>
+                <a class="button" href="{{ path('article_edit') }}">edit</a>
             {% endif %}
         </ul>
         {% else %}
