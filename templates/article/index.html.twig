@@ -2,32 +2,27 @@
 
 {% block title %}Article index{% endblock %}
 
-{% block body %}
+{% block page %}
 
+    <h2>Article index</h2>
 
-
-
-
-    <div class="body-form">
-    <div class="form">
-
-
-
-        <h2>Article index</h2>
-
-
-
-        {% for article in articles %}
-            <ul><h3>{{ article.title }}</h3>
-                <li>{{ article.content }}</li>
-                <li class="author">{{ article.author.userName }}</li>
-                <!--<li>{{ article.createdAt ? article.createdAt|date('Y-m-d H:i:s') : '' }}</li>
+    {% for article in articles %}
+        <ul><h3>{{ article.title }}</h3>
+            <li>{{ article.content }}</li>
+            <li class="author">{{ article.author.userName }}</li>
+            <!--<li>{{ article.createdAt ? article.createdAt|date('Y-m-d H:i:s') : '' }}</li>
                 <li>{{ article.updatedAt ? article.updatedAt|date('Y-m-d H:i:s') : '' }}</li>--!>
 
-                <a class="button" href="{{ path('article_show', {'id': article.id}) }}">show</a>
-                {% if is_granted('ROLE_ADMIN') %}
-                    <a class="button" href="{{ path('article_edit', {'slug': article.slug}) }}">edit</a>
-                {% endif %}
+            <a class="button" href="{{ path('article_show', {'id': article.id}) }}">show</a>
+            {% if is_granted('ROLE_ADMIN') %}
+                <a class="button" href="{{ path('article_edit', {'slug': article.slug}) }}">edit</a>
+            {% endif %}
+        </ul>
+    {% else %}
+        <tr>
+            <td colspan="7">no records found</td>
+        </tr>
+    {% endfor %}
 
                 <li>
                     {% if is_granted('ROLE_ADMIN') %}
@@ -43,7 +38,5 @@
 
 
     <a class="button" href="{{ path('article_new') }}">Create new</a>
-
-    </div>
-    </div>
 {% endblock %}
+

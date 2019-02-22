@@ -14,17 +14,25 @@ class UsersFixtures extends Fixture
 
     public function __construct(UserPasswordEncoderInterface $passwordEncoder)
     {
-        $this->passwordEncoder=$passwordEncoder;
+        $this->passwordEncoder = $passwordEncoder;
     }
 
     public function load(ObjectManager $manager)
 
     {
-      $users= new Users();
+        $thibault= new Users();
+        $thibault->setPassword($this->passwordEncoder->encodePassword($thibault, 'titi'));
+        $thibault->setEmail('thibault@thibault.fr');
+        $thibault->setRoles(['ROLE_ADMIN']);
 
-            $users->setPassword($this->passwordEncoder->encodePassword($users, 'the new password'));
+        $manager->persist($thibault);
 
+        $mael= new Users();
+        $mael->setPassword($this->passwordEncoder->encodePassword($mael, 'mama'));
+        $mael->setEmail('mael@mael.fr');
+        $mael->setRoles(['ROLE_ADMIN']);
 
+        $manager->persist($mael);
 
         $manager->flush();
     }

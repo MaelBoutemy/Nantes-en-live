@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="UTF-8">
     <title>{% block title %}Nantes en live{% endblock %}</title>
@@ -17,16 +18,35 @@
                     <a href="{{ path('logout_route') }}">Se déconnecter</a>
                 {% else %}
                     <a href="{{ path('app_login') }}">Se connecter</a>
-                {% endif %}</li>
-            <li><a href="{{ path('user_new') }}">Mon compte</a></li>
+            {% endif %}
+            </li>
+
+            <li>
+            {% if is_granted('IS_AUTHENTICATED_FULLY') %}
+                <a href="{{ path('user_index') }}">Nom d'utilisateur</a>
+            {% else %}
+                <a href="{{ path('user_new') }}">S'inscrire</a>
+            {% endif %}
+            </li>
+
             <li><a href="{{ path('article_index') }}">Actu</a></li>
         </ul>
         <div class="searchBar">{{ render(controller('App\\Controller\\SearchController::searchBar')) }}</div>
     </nav>
+
+
+
 <main>
     {% block body %}
+
+    <div class="body-form"><div class="form">
+            {% block page %}
+            {% endblock %}
+    </div></div>
     {% endblock %}
+
 </main>
+
 {% block footer %}
 <footer>
     {{ render(controller('App\\Controller\\NewsletterController::new')) }}
@@ -35,4 +55,5 @@
     </div>
 </footer>
 {% endblock %}
+
 </html>

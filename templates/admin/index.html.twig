@@ -1,39 +1,20 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}Admin index{% endblock %}
+{% block title %}Admin{% endblock %}
 
-{% block body %}
-    <h1>Admin index</h1>
 
-    <table class="table">
-        <thead>
-            <tr>
-                <th>Id</th>
-                <th>FirstName</th>
-                <th>LastName</th>
-                <th>Password</th>
-                <th>actions</th>
-            </tr>
-        </thead>
-        <tbody>
-        {% for admin in admins %}
-            <tr>
-                <td>{{ admin.id }}</td>
-                <td>{{ admin.firstName }}</td>
-                <td>{{ admin.lastName }}</td>
-                <td>{{ admin.password }}</td>
-                <td>
-                    <a href="{{ path('admin_show', {'id': admin.id}) }}">show</a>
-                    <a href="{{ path('admin_edit', {'id': admin.id}) }}">edit</a>
-                </td>
-            </tr>
-        {% else %}
-            <tr>
-                <td colspan="5">no records found</td>
-            </tr>
-        {% endfor %}
-        </tbody>
-    </table>
+{% block page %}
+    <h1>Hello {{ app.user.email }}</h1>
 
-    <a href="{{ path('admin_new') }}">Create new</a>
+    <p>Créer un article  : <a class="button" href="{{ path('article_new') }}">Create new</a></p>
+
+    <p>Editer un article  : <a class="button" href="{{ path('article_new') }}">Edit</a></p>
+
+    <p>Supprimer un article  : <a class="button" href="{{ path('article_new') }}">Delete</a></p>
+
+    <p>Créer une newslestter  : <a class="button" href="{{ path('newsletter_new') }}">Create new</a></p>
+
+    <p>Ajouté un Admin : <a class="button" href="{{ path('admin_new') }}">Create new</a></p>
 {% endblock %}
+
+
