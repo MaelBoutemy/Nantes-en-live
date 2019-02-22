@@ -5,11 +5,9 @@
 
 {% block page %}
 
-    <h1>Hello {{ app.user.email }}</h1>
+    <h1>Hello {{ app.user.name }}</h1>
 
     <p>Créer un article  : <a class="button" href="{{ path('article_new') }}">Create new</a></p>
-
-    <p>Créer une newslestter  : <a class="button" href="{{ path('newsletter_new') }}">Create new</a></p>
 
     <p>Ajouté un Admin : <a class="button" href="{{ path('admin_new') }}">Create new</a></p>
 

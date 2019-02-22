@@ -22,7 +22,7 @@
 
             <li>
             {% if is_granted('IS_AUTHENTICATED_FULLY') %}
-                <a href="{{ path('user_index') }}">Nom d'utilisateur</a>
+                <a href="{{ path('user_index') }}">{{ app.user.name }}</a>
             {% else %}
                 <a href="{{ path('user_new') }}">S'inscrire</a>
             {% endif %}
@@ -48,6 +48,11 @@
 <footer>
     {{ render(controller('App\\Controller\\NewsletterController::new')) }}
     <div class="contact-footer">
+        <h3>Nous contactez :</h3>
+        <ul>
+            <li><img src="{{ asset('/images/facebook.svg') }}"></li>
+            <li><img src="{{ asset('/images/Twitter.svg') }}"></li>
+        </ul>
 
     </div>
 </footer>

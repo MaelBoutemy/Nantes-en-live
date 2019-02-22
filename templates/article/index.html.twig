@@ -4,7 +4,7 @@
 
 {% block page %}
 
-    <h2>Article index</h2>
+    <h2>Article</h2>
 
     {% for article in articles %}
         <ul><h3>{{ article.title }}</h3>
@@ -22,7 +22,8 @@
                 <p colspan="7">no records found</p>
         {% endfor %}
 
-
+    {% if is_granted('ROLE_ADMIN') %}
     <a class="button" href="{{ path('article_new') }}">Create new</a>
+    {% endif %}
 {% endblock %}
 
