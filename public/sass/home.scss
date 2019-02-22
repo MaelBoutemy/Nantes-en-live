@@ -1,12 +1,16 @@
 .html {
   overflow-y: hidden;
+
+  background-color: $grey;
 }
 .video {
-
   position: absolute;
   display: flex;
   justify-content: center;
   width: 100%;
+  video {
+    display: none;
+  }
   .about {
     h2 {
       font-family: $title;
@@ -26,5 +30,13 @@
                   $red 3px 3px,
                   $red 4px 4px,
                   $red 5px 5px;
+  }
+}
+
+@media screen and (min-width: 960px){
+  .video {
+    video {
+      display: initial;
+    }
   }
 }

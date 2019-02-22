@@ -21,6 +21,7 @@ class UsersFixtures extends Fixture
 
     {
         $thibault= new Users();
+        $thibault->setName('Tibault');
         $thibault->setPassword($this->passwordEncoder->encodePassword($thibault, 'titi'));
         $thibault->setEmail('thibault@thibault.fr');
         $thibault->setRoles(['ROLE_ADMIN']);
@@ -28,6 +29,7 @@ class UsersFixtures extends Fixture
         $manager->persist($thibault);
 
         $mael= new Users();
+        $mael->setName('Mael');
         $mael->setPassword($this->passwordEncoder->encodePassword($mael, 'mama'));
         $mael->setEmail('mael@mael.fr');
         $mael->setRoles(['ROLE_ADMIN']);
