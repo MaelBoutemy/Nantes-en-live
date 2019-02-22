@@ -144,7 +144,7 @@ main {
 footer {
   display: flex;
   flex-flow: column;
-  width: 100%;
+  width: 70%;
   bottom: 0; }
   footer .form-footer {
     display: flex;
@@ -185,9 +185,24 @@ footer {
         transform: translate3d(1px, 1px, 0); }
 
 .contact-footer {
-  display: flex; }
+  display: flex;
+  flex-flow: column; }
+  .contact-footer h3 {
+    color: #de6a50;
+    font-family: "Roboto", sans-serif;
+    text-align: center; }
+  .contact-footer ul {
+    display: flex;
+    justify-content: center;
+    padding: 0; }
+    .contact-footer ul li {
+      list-style-type: none;
+      margin: 0 2em 0 2em; }
 
 @media screen and (min-width: 960px) {
+  footer {
+    flex-flow: row; }
+
   .form-footer {
     width: 50%; }
 
