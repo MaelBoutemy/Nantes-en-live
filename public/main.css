@@ -139,12 +139,12 @@ main {
     .video .about h2 {
       font-family: "Roboto", sans-serif;
       font-weight: bold;
-      margin-top: 150px; }
+      margin-top: 250px; }
 
 footer {
   display: flex;
   flex-flow: column;
-  width: 70%;
+  width: 100%;
   bottom: 0; }
   footer .form-footer {
     display: flex;
@@ -185,28 +185,13 @@ footer {
         transform: translate3d(1px, 1px, 0); }
 
 .contact-footer {
-  display: flex;
-  flex-flow: column;
-  font-family: "Roboto", sans-serif; }
-  .contact-footer h3 {
-    text-align: center;
-    width: 100%;
-    color: #de6a50; }
-  .contact-footer ul {
-    width: 100%;
-    display: flex;
-    flex-flow: row;
-    justify-content: center; }
-    .contact-footer ul li {
-      list-style-type: none;
-      margin: 0 2em 0 2em; }
+  display: flex; }
 
 @media screen and (min-width: 960px) {
-  footer {
-    flex-flow: row; }
-    footer .form-footer {
-      width: 50%; }
-    footer .contact-footer {
-      width: 50%; } }
+  .form-footer {
+    width: 50%; }
+
+  .contact-footer {
+    width: 50%; } }
 
 /*# sourceMappingURL=main.css.map */
