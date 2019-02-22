@@ -30,8 +30,9 @@
                 {% endif %}
 
                 <li>
+                    {% if is_granted('ROLE_ADMIN') %}
                     <a class="button" href="{{ path('article_show', {'id': article.id}) | trans}}">show</a>
-
+                    {% endif %}
                 </li>
             </ul>
         {% else %}

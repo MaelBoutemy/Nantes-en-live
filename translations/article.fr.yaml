@@ -3,6 +3,6 @@ article:
     content: Contenu
     author: Auteur
     state: Statut
-    created at: crée le
-    updtated at: mis à jour le
+    created_At: crée le
+    updtated_At: mis à jour le
 

@@ -12,6 +12,7 @@ use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
 use Symfony\Contracts\Translation\TranslatorInterface;
 
+
 /**
  * @Route("/article")
  */
@@ -64,7 +65,7 @@ class ArticleController extends AbstractController
 
     /**
      * @Route("/{slug}/edit", name="article_edit", methods={"GET","POST"})
-     * @IsGranted("ROLE_ADMIN")
+     * IsGranted("ROLE_ADMIN")
      */
     public function edit(Request $request, Article $article)
     {
