@@ -30,6 +30,9 @@ Hac ex causa conlaticia stipe Valerius humatur ille Publicola et subsidiis amico
 Coactique aliquotiens nostri pedites ad eos persequendos scandere clivos sublimes etiam si lapsantibus plantis fruticeta prensando vel dumos ad vertices venerint summos, inter arta tamen et invia nullas acies explicare permissi nec firmare nisu valido gressus: hoste discursatore rupium abscisa volvente, ruinis ponderum inmanium consternuntur, aut ex necessitate ultima fortiter dimicante, superati periculose per prona discedunt.
 ');
         $article->setAuthor($this->getReference(AuthorFixtures::MICHEL_AUTHOR_REFERENCE));
+        $article->setState(true);
+        $article->setUpdatedAt(new \DateTime());
+        $article->setCreatedAt(new \DateTime());
 
         $manager->persist($article);
 
@@ -49,6 +52,9 @@ Hac ex causa conlaticia stipe Valerius humatur ille Publicola et subsidiis amico
 Coactique aliquotiens nostri pedites ad eos persequendos scandere clivos sublimes etiam si lapsantibus plantis fruticeta prensando vel dumos ad vertices venerint summos, inter arta tamen et invia nullas acies explicare permissi nec firmare nisu valido gressus: hoste discursatore rupium abscisa volvente, ruinis ponderum inmanium consternuntur, aut ex necessitate ultima fortiter dimicante, superati periculose per prona discedunt.
 ');
         $article->setAuthor($this->getReference(AuthorFixtures::MICHEL_AUTHOR_REFERENCE));
+        $article->setState(true);
+        $article->setUpdatedAt(new \DateTime());
+        $article->setCreatedAt(new \DateTime());
 
         $manager->persist($article);
 
@@ -68,6 +74,9 @@ Hac ex causa conlaticia stipe Valerius humatur ille Publicola et subsidiis amico
 Coactique aliquotiens nostri pedites ad eos persequendos scandere clivos sublimes etiam si lapsantibus plantis fruticeta prensando vel dumos ad vertices venerint summos, inter arta tamen et invia nullas acies explicare permissi nec firmare nisu valido gressus: hoste discursatore rupium abscisa volvente, ruinis ponderum inmanium consternuntur, aut ex necessitate ultima fortiter dimicante, superati periculose per prona discedunt.
 ');
         $article->setAuthor($this->getReference(AuthorFixtures::MICHEL_AUTHOR_REFERENCE));
+        $article->setState(true);
+        $article->setUpdatedAt(new \DateTime());
+        $article->setCreatedAt(new \DateTime());
 
         $manager->persist($article);
 
@@ -87,6 +96,9 @@ Hac ex causa conlaticia stipe Valerius humatur ille Publicola et subsidiis amico
 Coactique aliquotiens nostri pedites ad eos persequendos scandere clivos sublimes etiam si lapsantibus plantis fruticeta prensando vel dumos ad vertices venerint summos, inter arta tamen et invia nullas acies explicare permissi nec firmare nisu valido gressus: hoste discursatore rupium abscisa volvente, ruinis ponderum inmanium consternuntur, aut ex necessitate ultima fortiter dimicante, superati periculose per prona discedunt.
 ');
         $article->setAuthor($this->getReference(AuthorFixtures::MICHEL_AUTHOR_REFERENCE));
+        $article->setState(true);
+        $article->setUpdatedAt(new \DateTime());
+        $article->setCreatedAt(new \DateTime());
 
         $manager->persist($article);
         $article = new Article();
@@ -105,6 +117,9 @@ Hac ex causa conlaticia stipe Valerius humatur ille Publicola et subsidiis amico
 Coactique aliquotiens nostri pedites ad eos persequendos scandere clivos sublimes etiam si lapsantibus plantis fruticeta prensando vel dumos ad vertices venerint summos, inter arta tamen et invia nullas acies explicare permissi nec firmare nisu valido gressus: hoste discursatore rupium abscisa volvente, ruinis ponderum inmanium consternuntur, aut ex necessitate ultima fortiter dimicante, superati periculose per prona discedunt.
 ');
         $article->setAuthor($this->getReference(AuthorFixtures::MICHEL_AUTHOR_REFERENCE));
+        $article->setState(true);
+        $article->setUpdatedAt(new \DateTime());
+        $article->setCreatedAt(new \DateTime());
 
         $manager->persist($article);
         $article = new Article();
@@ -123,6 +138,9 @@ Hac ex causa conlaticia stipe Valerius humatur ille Publicola et subsidiis amico
 Coactique aliquotiens nostri pedites ad eos persequendos scandere clivos sublimes etiam si lapsantibus plantis fruticeta prensando vel dumos ad vertices venerint summos, inter arta tamen et invia nullas acies explicare permissi nec firmare nisu valido gressus: hoste discursatore rupium abscisa volvente, ruinis ponderum inmanium consternuntur, aut ex necessitate ultima fortiter dimicante, superati periculose per prona discedunt.
 ');
         $article->setAuthor($this->getReference(AuthorFixtures::MICHEL_AUTHOR_REFERENCE));
+        $article->setState(true);
+        $article->setUpdatedAt(new \DateTime());
+        $article->setCreatedAt(new \DateTime());
 
         $manager->persist($article);
         $article = new Article();
@@ -141,6 +159,9 @@ Hac ex causa conlaticia stipe Valerius humatur ille Publicola et subsidiis amico
 Coactique aliquotiens nostri pedites ad eos persequendos scandere clivos sublimes etiam si lapsantibus plantis fruticeta prensando vel dumos ad vertices venerint summos, inter arta tamen et invia nullas acies explicare permissi nec firmare nisu valido gressus: hoste discursatore rupium abscisa volvente, ruinis ponderum inmanium consternuntur, aut ex necessitate ultima fortiter dimicante, superati periculose per prona discedunt.
 ');
         $article->setAuthor($this->getReference(AuthorFixtures::MICHEL_AUTHOR_REFERENCE));
+        $article->setState(true);
+        $article->setUpdatedAt(new \DateTime());
+        $article->setCreatedAt(new \DateTime());
 
         $manager->persist($article);
         $article = new Article();
@@ -159,6 +180,9 @@ Hac ex causa conlaticia stipe Valerius humatur ille Publicola et subsidiis amico
 Coactique aliquotiens nostri pedites ad eos persequendos scandere clivos sublimes etiam si lapsantibus plantis fruticeta prensando vel dumos ad vertices venerint summos, inter arta tamen et invia nullas acies explicare permissi nec firmare nisu valido gressus: hoste discursatore rupium abscisa volvente, ruinis ponderum inmanium consternuntur, aut ex necessitate ultima fortiter dimicante, superati periculose per prona discedunt.
 ');
         $article->setAuthor($this->getReference(AuthorFixtures::MICHEL_AUTHOR_REFERENCE));
+        $article->setState(true);
+        $article->setUpdatedAt(new \DateTime());
+        $article->setCreatedAt(new \DateTime());
 
         $manager->persist($article);
 

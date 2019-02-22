@@ -22,12 +22,12 @@ class Article
     private $title;
 
     /**
-     * @ORM\Column(type="datetime", nullable=true)
+     * @ORM\Column(type="datetime", nullable=false)
      */
     private $created_At;
 
     /**
-     * @ORM\Column(type="datetime", nullable=true)
+     * @ORM\Column(type="datetime", nullable=false)
      */
     private $updated_At;
 
@@ -49,7 +49,7 @@ class Article
 
     /**
      * @ORM\ManyToOne(targetEntity="App\Entity\Admin")
-     * @ORM\JoinColumn(nullable=false)
+     * @ORM\JoinColumn(nullable=true)
      */
     private $admin;
 
