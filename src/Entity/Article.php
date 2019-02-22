@@ -63,8 +63,6 @@ class Article
         return $this->slug;
     }
 
-
-
     /**
      * @ORM\ManyToOne(targetEntity="App\Entity\Admin")
      * @ORM\JoinColumn(nullable=true)
