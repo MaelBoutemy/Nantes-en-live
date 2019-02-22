@@ -1,14 +1,15 @@
 .body-form {
   overflow-y: auto;
   width: 100%;
+  min-height: calc(100vh - 400px);
   display: flex;
   justify-content: center;
  .form {
    display: flex;
    flex-flow: column;
    background-color: $white;
-   border: solid 2px $red;
-   border-top: none;
+   border-right: solid 2px $red;
+   border-left: solid 2px $red;
    padding-bottom: 1em;
    text-align: center;
    h2 {

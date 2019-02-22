@@ -1,7 +1,9 @@
 {% extends 'base.html.twig' %}
 
-{% block body %}
 
+
+{% block body %}
+<html class="html">
     <div class="home-page">
 
 
@@ -16,9 +18,11 @@
 
         <div class="about"><h2>Nantes en live</h2>le site d'actu musicale nantaise</div>
        <video src="{{ asset('/moove/vidHome.mov') }}" autoplay loop muted></video>
+
     </div>
+
     </div>
 {% endblock %}
 {% block footer %}
-
+</html>
 {% endblock %}
