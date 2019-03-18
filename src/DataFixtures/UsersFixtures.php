@@ -21,7 +21,7 @@ class UsersFixtures extends Fixture
 
     {
         $thibault= new Users();
-        $thibault->setName('Tibault');
+        $thibault->setName('Thibault');
         $thibault->setPassword($this->passwordEncoder->encodePassword($thibault, 'titi'));
         $thibault->setEmail('thibault@thibault.fr');
         $thibault->setRoles(['ROLE_ADMIN']);
