@@ -31,30 +31,39 @@ nav {
   background-color: #000000;
   width: 100%;
   height: 200px; }
-  nav .banner {
-    justify-self: flex-start; }
-  nav ul {
-    flex: 30%;
-    min-width: 125px;
-    flex-flow: column;
-    align-self: center;
-    padding: 0 0 0 2em;
-    border-left: #de6a50 solid 1px;
-    border-right: #de6a50 solid 1px;
-    font-family: "Roboto", sans-serif;
-    font-weight: bold;
-    font-size: 1.1em; }
-    nav ul li {
-      line-height: 2.5em; }
-      nav ul li a {
+
+span {
+  height: 20px;
+  width: 20px;
+  color: white;
+  font-size: 1em; }
+
+.banner {
+  justify-self: flex-start; }
+
+ul {
+  flex: 30%;
+  min-width: 125px;
+  flex-flow: column;
+  align-self: center;
+  padding: 0 0 0 2em;
+  border-left: #de6a50 solid 1px;
+  border-right: #de6a50 solid 1px;
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+  font-size: 1.1em; }
+  ul li {
+    line-height: 2.5em; }
+    ul li a {
+      text-decoration: none;
+      list-style-type: none;
+      color: #de6a50; }
+      ul li a:hover {
         text-decoration: none;
-        list-style-type: none;
-        color: #de6a50; }
-        nav ul li a:hover {
-          text-decoration: none;
-          color: #FAFCF8; }
-  nav .searchBar {
-    display: none; }
+        color: #FAFCF8; }
+
+.searchBar {
+  display: none; }
 
 main {
   display: flex;

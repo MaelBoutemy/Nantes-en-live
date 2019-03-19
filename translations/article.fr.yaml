@@ -1,8 +1,11 @@
 article:
-    title: Titre
+    title: Titre 
     content: Contenu
     author: Auteur
-    state: Statut
-    created_At: crée le
-    updtated_At: mis à jour le
+    created_At: Crée le
+    updated_At: Mis à jour le
+    Show_this_entry_publicly?: Afficher cet article?
+    Update: Mettre à jour
+    back to list from: retourner à la liste d'articles
+    Delete: Supprimer
 

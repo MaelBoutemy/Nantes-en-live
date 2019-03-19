@@ -28,14 +28,25 @@
             {% endif %}
             </li>
 
-            <li><a href="{{ path('article_index') }}">Actu</a></li>
+            <li><a href="{{ path('article_index') }}">Actus</a></li>
         </ul>
         <div class="searchBar">{{ render(controller('App\\Controller\\SearchController::searchBar')) }}</div>
+
+     <div class="countdown"> 
+      {% block body %}
+    {% block javascript %}
+      <script src="/script2.js"></script>
+    
+<h1> Prochain évènement :</h1>
+        <span id="days"></span> 
+        <span id="hours"></span> 
+        <span id="minutes"></span> 
+        </p>
+        </div>
     </nav>
-
+{% endblock %}
 <main>
-    {% block body %}
-
+   
     <div class="body-form"><div class="form">
             {% block page %}
             {% endblock %}
@@ -48,7 +59,7 @@
 <footer>
     {{ render(controller('App\\Controller\\NewsletterController::new')) }}
     <div class="contact-footer">
-        <h3>Nous contactez :</h3>
+        <h3>Nous contacter :</h3>
         <ul>
             <li><img src="{{ asset('/images/facebook.svg') }}"></li>
             <li><img src="{{ asset('/images/Twitter.svg') }}"></li>

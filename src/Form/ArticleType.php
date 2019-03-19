@@ -36,7 +36,7 @@ class ArticleType extends AbstractType
             ->add('content', TextareaType::class
             )
             ->add('state', CheckboxType::class, [
-                'label'    => 'Show this entry publicly?',
+                'label'    => 'Afficher cet article?',
                 'required' => false,
                 ]);
     }

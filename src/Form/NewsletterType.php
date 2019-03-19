@@ -22,6 +22,7 @@ class NewsletterType extends AbstractType
     {
         $resolver->setDefaults([
             'data_class' => Newsletter::class,
+            'translation_domain'=> 'newsletter'
         ]);
     }
 }
