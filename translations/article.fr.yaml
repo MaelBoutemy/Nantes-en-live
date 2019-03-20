@@ -4,5 +4,5 @@ article:
     author: Auteur
     state: Statut
     created_At: crée le
-    updtated_At: mis à jour le
+    updated_At: mis à jour le
 
