@@ -1,88 +1,232 @@
-/*
-Error: Invalid CSS after "...yle: italic;www": expected "{", was "}"
-        on line 31 of sass/article.scss
-        from line 2 of main.scss
+body {
+  width: 100%;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  background-color: #FAFCF8;
+  margin: 0; }
+  body .button {
+    margin: .2em auto 1em auto;
+    text-decoration-line: none;
+    list-style-type: none;
+    font-family: "Nunito", sans-serif;
+    background-color: #de6a50;
+    color: #000000;
+    border: #000000 solid 0.1em;
+    box-shadow: #000000 3px 3px 0, #000000 2px 2px 0, #000000 1px 1px 0;
+    transition: all .1s;
+    padding: .5em;
+    width: 100px; }
+    body .button:hover {
+      color: #000000;
+      cursor: pointer;
+      text-decoration: none;
+      box-shadow: #000000 1px 1px 0;
+      border: #000000 solid 0.1em;
+      transform: translate3d(1px, 1px, 0); }
 
-26:        margin-bottom: 1em;
-27:      }
-28:    }
-29:  .author {
-30:    font-style: italic;www
-31:        }
-32:   }
-33: }
-34: 
-35: @media screen and (min-width: 960px){
-36:   .form {
+nav {
+  display: flex;
+  flex-flow: row nowrap;
+  background-color: #000000;
+  width: 100%;
+  height: 200px; }
+  nav .banner {
+    justify-self: flex-start; }
+  nav ul {
+    flex: 30%;
+    min-width: 125px;
+    flex-flow: column;
+    align-self: center;
+    padding: 0 0 0 2em;
+    border-left: #de6a50 solid 1px;
+    border-right: #de6a50 solid 1px;
+    font-family: "Roboto", sans-serif;
+    font-weight: bold;
+    font-size: 1.1em; }
+    nav ul li {
+      line-height: 2.5em; }
+      nav ul li a {
+        text-decoration: none;
+        list-style-type: none;
+        color: #de6a50; }
+        nav ul li a:hover {
+          text-decoration: none;
+          color: #FAFCF8; }
+  nav .searchBar {
+    display: none; }
 
-Backtrace:
-sass/article.scss:31
-main.scss:2
-/usr/lib/ruby/vendor_ruby/sass/scss/parser.rb:1207:in `expected'
-/usr/lib/ruby/vendor_ruby/sass/scss/parser.rb:1137:in `expected'
-/usr/lib/ruby/vendor_ruby/sass/scss/parser.rb:1132:in `tok!'
-/usr/lib/ruby/vendor_ruby/sass/scss/parser.rb:665:in `block'
-/usr/lib/ruby/vendor_ruby/sass/scss/parser.rb:735:in `declaration_or_ruleset'
-/usr/lib/ruby/vendor_ruby/sass/scss/parser.rb:685:in `block_child'
-/usr/lib/ruby/vendor_ruby/sass/scss/parser.rb:677:in `block_contents'
-/usr/lib/ruby/vendor_ruby/sass/scss/parser.rb:666:in `block'
-/usr/lib/ruby/vendor_ruby/sass/scss/parser.rb:735:in `declaration_or_ruleset'
-/usr/lib/ruby/vendor_ruby/sass/scss/parser.rb:685:in `block_child'
-/usr/lib/ruby/vendor_ruby/sass/scss/parser.rb:677:in `block_contents'
-/usr/lib/ruby/vendor_ruby/sass/scss/parser.rb:666:in `block'
-/usr/lib/ruby/vendor_ruby/sass/scss/parser.rb:735:in `declaration_or_ruleset'
-/usr/lib/ruby/vendor_ruby/sass/scss/parser.rb:685:in `block_child'
-/usr/lib/ruby/vendor_ruby/sass/scss/parser.rb:677:in `block_contents'
-/usr/lib/ruby/vendor_ruby/sass/scss/parser.rb:666:in `block'
-/usr/lib/ruby/vendor_ruby/sass/scss/parser.rb:658:in `ruleset'
-/usr/lib/ruby/vendor_ruby/sass/scss/parser.rb:684:in `block_child'
-/usr/lib/ruby/vendor_ruby/sass/scss/parser.rb:674:in `block_contents'
-/usr/lib/ruby/vendor_ruby/sass/scss/parser.rb:125:in `stylesheet'
-/usr/lib/ruby/vendor_ruby/sass/scss/parser.rb:41:in `parse'
-/usr/lib/ruby/vendor_ruby/sass/engine.rb:406:in `_to_tree'
-/usr/lib/ruby/vendor_ruby/sass/engine.rb:312:in `to_tree'
-/usr/lib/ruby/vendor_ruby/sass/tree/visitors/perform.rb:326:in `block in visit_import'
-/usr/lib/ruby/vendor_ruby/sass/stack.rb:88:in `block in with_import'
-/usr/lib/ruby/vendor_ruby/sass/stack.rb:115:in `with_frame'
-/usr/lib/ruby/vendor_ruby/sass/stack.rb:88:in `with_import'
-/usr/lib/ruby/vendor_ruby/sass/tree/visitors/perform.rb:325:in `visit_import'
-/usr/lib/ruby/vendor_ruby/sass/tree/visitors/base.rb:36:in `visit'
-/usr/lib/ruby/vendor_ruby/sass/tree/visitors/perform.rb:160:in `block in visit'
-/usr/lib/ruby/vendor_ruby/sass/stack.rb:79:in `block in with_base'
-/usr/lib/ruby/vendor_ruby/sass/stack.rb:115:in `with_frame'
-/usr/lib/ruby/vendor_ruby/sass/stack.rb:79:in `with_base'
-/usr/lib/ruby/vendor_ruby/sass/tree/visitors/perform.rb:160:in `visit'
-/usr/lib/ruby/vendor_ruby/sass/tree/visitors/base.rb:52:in `block in visit_children'
-/usr/lib/ruby/vendor_ruby/sass/tree/visitors/base.rb:52:in `map'
-/usr/lib/ruby/vendor_ruby/sass/tree/visitors/base.rb:52:in `visit_children'
-/usr/lib/ruby/vendor_ruby/sass/tree/visitors/perform.rb:169:in `block in visit_children'
-/usr/lib/ruby/vendor_ruby/sass/tree/visitors/perform.rb:181:in `with_environment'
-/usr/lib/ruby/vendor_ruby/sass/tree/visitors/perform.rb:168:in `visit_children'
-/usr/lib/ruby/vendor_ruby/sass/tree/visitors/base.rb:36:in `block in visit'
-/usr/lib/ruby/vendor_ruby/sass/tree/visitors/perform.rb:188:in `visit_root'
-/usr/lib/ruby/vendor_ruby/sass/tree/visitors/base.rb:36:in `visit'
-/usr/lib/ruby/vendor_ruby/sass/tree/visitors/perform.rb:159:in `visit'
-/usr/lib/ruby/vendor_ruby/sass/tree/visitors/perform.rb:8:in `visit'
-/usr/lib/ruby/vendor_ruby/sass/tree/root_node.rb:36:in `css_tree'
-/usr/lib/ruby/vendor_ruby/sass/tree/root_node.rb:29:in `render_with_sourcemap'
-/usr/lib/ruby/vendor_ruby/sass/engine.rb:381:in `_render_with_sourcemap'
-/usr/lib/ruby/vendor_ruby/sass/engine.rb:298:in `render_with_sourcemap'
-/usr/lib/ruby/vendor_ruby/sass/plugin/compiler.rb:492:in `update_stylesheet'
-/usr/lib/ruby/vendor_ruby/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
-/usr/lib/ruby/vendor_ruby/sass/plugin/compiler.rb:209:in `each'
-/usr/lib/ruby/vendor_ruby/sass/plugin/compiler.rb:209:in `update_stylesheets'
-/usr/lib/ruby/vendor_ruby/sass/plugin/compiler.rb:473:in `on_file_changed'
-/usr/lib/ruby/vendor_ruby/sass/plugin/compiler.rb:331:in `block in watch'
-/usr/lib/ruby/vendor_ruby/listen/event/config.rb:23:in `call'
-/usr/lib/ruby/vendor_ruby/listen/event/processor.rb:115:in `_process_changes'
-/usr/lib/ruby/vendor_ruby/listen/event/processor.rb:19:in `block in loop_for'
-/usr/lib/ruby/vendor_ruby/listen/event/processor.rb:15:in `loop'
-/usr/lib/ruby/vendor_ruby/listen/event/processor.rb:15:in `loop_for'
-/usr/lib/ruby/vendor_ruby/listen/event/loop.rb:84:in `_wait_for_changes'
-/usr/lib/ruby/vendor_ruby/listen/event/loop.rb:42:in `block in setup'
-/usr/lib/ruby/vendor_ruby/listen/internals/thread_pool.rb:6:in `block in add'
-*/
-body:before {
-  white-space: pre;
-  font-family: monospace;
-  content: "Error: Invalid CSS after \"...yle: italic;www\": expected \"{\", was \"}\"\A         on line 31 of sass/article.scss\A         from line 2 of main.scss\A \A 26:        margin-bottom: 1em;\A 27:      }\A 28:    }\A 29:  .author {\A 30:    font-style: italic;www\A 31:        }\A 32:   }\A 33: }\A 34: \A 35: @media screen and (min-width: 960px){\A 36:   .form {"; }
+main {
+  display: flex;
+  width: 100%; }
+  main form {
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between; }
+    main form label {
+      width: 100px;
+      text-align: center; }
+    main form input {
+      width: 200px; }
+
+@media screen and (min-width: 960px) {
+  nav ul {
+    display: flex;
+    flex: 60%;
+    flex-flow: row-reverse;
+    justify-content: space-around; }
+  nav .searchBar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 70%; }
+    nav .searchBar form {
+      display: flex;
+      flex-flow: column;
+      justify-content: center;
+      align-items: center; }
+    nav .searchBar .search {
+      flex: 100%;
+      margin-bottom: .2em; }
+    nav .searchBar .button-search {
+      border: solid 0.1em #de6a50;
+      border-radius: 5px;
+      font-family: "Nunito", sans-serif;
+      color: #de6a50;
+      font-weight: bold;
+      width: 100px; }
+      nav .searchBar .button-search:hover {
+        background-color: #FAFCF8; } }
+.body-form {
+  overflow-y: auto;
+  width: 100%;
+  min-height: calc(100vh - 400px);
+  display: flex;
+  justify-content: center; }
+  .body-form .form {
+    display: flex;
+    flex-flow: column;
+    background-color: #FAFCF8;
+    border-right: solid 2px #de6a50;
+    border-left: solid 2px #de6a50;
+    padding-bottom: 1em;
+    text-align: center; }
+    .body-form .form h2 {
+      font-family: "Roboto", sans-serif; }
+    .body-form .form p,
+    .body-form .form ul {
+      padding: .2em .2em;
+      font-family: "Nunito", sans-serif; }
+    .body-form .form ul li {
+      list-style-type: none;
+      margin-bottom: 1em; }
+    .body-form .form .author {
+      font-style: italic; }
+
+@media screen and (min-width: 960px) {
+  .form {
+    padding: 2em;
+    width: 60%; } }
+.html {
+  overflow-y: hidden;
+  background-color: #7F7E7D; }
+
+.video {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  width: 100%; }
+  .video video {
+    display: none; }
+  .video .about {
+    text-align: center;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(250, 252, 248, 0.5);
+    font-family: "Nunito", sans-serif;
+    font-size: 4em;
+    color: #FAFCF8;
+    text-shadow: #de6a50 1px 1px, #de6a50 2px 2px, #de6a50 3px 3px, #de6a50 4px 4px, #de6a50 5px 5px; }
+    .video .about h2 {
+      font-family: "Roboto", sans-serif;
+      font-weight: bold;
+      margin-top: 250px; }
+
+@media screen and (min-width: 960px) {
+  .video video {
+    display: initial; } }
+footer {
+  display: flex;
+  flex-flow: column;
+  width: 70%;
+  bottom: 0; }
+  footer .form-footer {
+    display: flex;
+    flex-flow: column;
+    font-family: "Nunito", sans-serif; }
+    footer .form-footer h3 {
+      text-align: center;
+      font-family: "Roboto", sans-serif;
+      color: #de6a50; }
+    footer .form-footer .first-name-footer,
+    footer .form-footer .last-name-footer,
+    footer .form-footer .mail-footer {
+      display: flex;
+      justify-content: space-around; }
+      footer .form-footer .first-name-footer label,
+      footer .form-footer .last-name-footer label,
+      footer .form-footer .mail-footer label {
+        width: 200px;
+        text-align: center; }
+      footer .form-footer .first-name-footer input,
+      footer .form-footer .last-name-footer input,
+      footer .form-footer .mail-footer input {
+        width: 200px; }
+    footer .form-footer .button-footer {
+      margin: .2em auto;
+      margin-bottom: 1em;
+      text-decoration-line: none;
+      list-style-type: none;
+      font-family: "Nunito", sans-serif;
+      background-color: #de6a50;
+      color: #000000;
+      border: #000000 solid 0.1em;
+      box-shadow: #000000 3px 3px 0, #000000 2px 2px 0, #000000 1px 1px 0;
+      transition: all .1s;
+      padding: .5em;
+      width: 100px; }
+      footer .form-footer .button-footer:hover {
+        color: #000000;
+        cursor: pointer;
+        text-decoration: none;
+        box-shadow: #000000 1px 1px 0;
+        border: #000000 solid 0.1em;
+        transform: translate3d(1px, 1px, 0); }
+
+.contact-footer {
+  display: flex;
+  flex-flow: column; }
+  .contact-footer h3 {
+    color: #de6a50;
+    font-family: "Roboto", sans-serif;
+    text-align: center; }
+  .contact-footer ul {
+    display: flex;
+    justify-content: center;
+    padding: 0; }
+    .contact-footer ul li {
+      list-style-type: none;
+      margin: 0 2em 0 2em; }
+
+@media screen and (min-width: 960px) {
+  footer {
+    flex-flow: row; }
+
+  .form-footer {
+    width: 50%; }
+
+  .contact-footer {
+    width: 50%; } }
+
+/*# sourceMappingURL=main.css.map */
