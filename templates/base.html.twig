@@ -28,7 +28,10 @@
             {% endif %}
             </li>
 
+            <li><a href="{{ path('events') }}">Events</a></li>
+
             <li><a href="{{ path('article_index') }}">Actu</a></li>
+
         </ul>
         <div class="searchBar">{{ render(controller('App\\Controller\\SearchController::searchBar')) }}</div>
     </nav>
@@ -43,6 +46,7 @@
     {% endblock %}
 
 </main>
+{% block javascripts %} <script src="{{ asset('/script.js') }}"></script> {% endblock %}
 
 {% block footer %}
 <footer>

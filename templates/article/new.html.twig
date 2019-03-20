@@ -11,7 +11,7 @@
         <a class="button" href="{{ path('article_index') }}">Les articles</a>
 
         {% if is_granted('ROLE_ADMIN') %}
-        <a class="button" href="{{ path('article_index') }}">Accueil admin</a>
+        <a class="button" href="{{ path('admin_index') }}">Accueil admin</a>
         {% endif %}
 
     </form>
