@@ -10,8 +10,6 @@ window.addEventListener('load', event=>{
     url.send(null)
 
     let data = JSON.parse(url.response)
-
-    console.log(data.records);
     
     if (data) {
 
