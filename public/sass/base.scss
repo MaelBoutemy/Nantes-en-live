@@ -28,7 +28,9 @@ body{
         transform: translate3d(1px, 1px, 0);
       }
   }
-  }
+}
+
+
   nav {
     display: flex;
     flex-flow: row nowrap;
@@ -71,7 +73,6 @@ body{
             &:hover {
               text-decoration: none;
               color: $white;
-
             }
           }
         }
@@ -79,13 +80,25 @@ body{
     .searchBar {
       display: none;
     }
-    
+}
 
-  main {
+
+main {
+  display: flex;
+  width: 100%;
+  form {
     display: flex;
-
-    width: 100%;
+    flex-flow: column;
+    justify-content: space-between;
+    label {
+      width: 100px;
+      text-align: center
+    }
+    input {
+      width: 200px
+    }
   }
+}
 
 @media screen and (min-width: 960px) {
   nav {
@@ -100,14 +113,12 @@ body{
       display: flex;
       justify-content: center;
       align-items: center;
-
       flex: 70%;
       form {
         display: flex;
         flex-flow: column;
         justify-content: center;
         align-items: center;
-
       }
       .search {
         flex: 100%;

@@ -12,17 +12,18 @@ footer {
       font-family: $title;
       color: $red;
     }
-    .first-name-footer {
-      display: flex;
-      justify-content: space-around;
-    }
-    .last-name-footer {
-      display: flex;
-      justify-content: space-around;
-    }
+    .first-name-footer,
+    .last-name-footer,
     .mail-footer {
       display: flex;
       justify-content: space-around;
+      label {
+        width: 200px;
+        text-align: center;
+      }
+      input {
+        width: 200px;
+      }
     }
     .button-footer {
       margin: .2em auto;
