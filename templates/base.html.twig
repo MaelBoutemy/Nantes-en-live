@@ -31,9 +31,11 @@
                     <a href="{{ path('user_new') }}">S'inscrire</a>
                 {% endif %}
             </li>
-            <li>
-                <a href="{{ path('article_index') }}">Actus</a>
-            </li>
+
+            <li><a href="{{ path('events') }}">Events</a></li>
+
+            <li><a href="{{ path('article_index') }}">Actu</a></li>
+
         </ul>
         <div class="searchBar">
             {{ render(controller('App\\Controller\\SearchController::searchBar')) }}</div>
@@ -64,4 +66,22 @@
             </div>
         </footer>
     {% endblock %}
+
+</main>
+{% block javascripts %} <script src="{{ asset('/script.js') }}"></script> {% endblock %}
+
+{% block footer %}
+<footer>
+    {{ render(controller('App\\Controller\\NewsletterController::new')) }}
+    <div class="contact-footer">
+        <h3>Nous contactez :</h3>
+        <ul>
+            <li><img src="{{ asset('/images/facebook.svg') }}"></li>
+            <li><img src="{{ asset('/images/Twitter.svg') }}"></li>
+        </ul>
+
+    </div>
+</footer>
+{% endblock %}
+
 </html>
