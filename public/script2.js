@@ -5,10 +5,10 @@ window.addEventListener("load", function () {
 
 
 
-  function countdown(endDate) {
+  function countdown(endDate,) {
     let days, hours, minutes;
 
-    endDate = new Date(endDate).getTime();
+    endDate = new Date("Jan 1, 2020 00:00:00").getTime();
 
 
 
@@ -16,11 +16,11 @@ window.addEventListener("load", function () {
       return;
     }
 
-    // setInterval(calculate, 1000);
+     setInterval(calculate, 1000);
 
     function calculate() {
       let startDate = new Date();
-      startDate = new Date();
+
 
 
 
@@ -38,10 +38,11 @@ window.addEventListener("load", function () {
         minutes = parseInt(timeRemaining / 60);
         timeRemaining = (timeRemaining % 60);
 
-        countdown = document.getElementById("countdown");
-        document.getElementById("days").innerHTML = parseInt(days, 10);
-        document.getElementById("hours").innerHTML = ("0" + hours).slice(-2);
-        document.getElementById("minutes").innerHTML = ("0" + minutes).slice(-2);
+        document.querySelector(".countdown").innerHTML = days + " jours   " + hours + " heures   "
+        + minutes + " minutes   ";
+        // document.getElementById("days").innerHTML = parseInt(days, 10);
+        // document.getElementById("hours").innerHTML = ("0" + hours).slice(-2);
+        // document.getElementById("minutes").innerHTML = ("0" + minutes).slice(-2);
 
       } else {
         return;
@@ -50,14 +51,15 @@ window.addEventListener("load", function () {
   }
 
 
-  setInterval((function () {
+  (function () {
     countdown('04/01/2333 05:00 PM');
-  },1000))
-
-}
 
 
 
+  }());
 
 
-)
+});
+
+
+

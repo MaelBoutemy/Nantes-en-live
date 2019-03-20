@@ -1,72 +1,67 @@
 <!DOCTYPE html>
 <html>
-
-<head>
-    <meta charset="UTF-8">
-    <title>{% block title %}Nantes en live{% endblock %}</title>
-    <link rel="icon" type="image/x-icon" href="Images/mic.svg">
-    {% block stylesheets %} <link rel="stylesheet" href="{{ asset('/main.css') }}" type="text/css"/>{% endblock %}
-    <link href="https://fonts.googleapis.com/css?family=Nunito|Roboto" rel="stylesheet">
-
-</head>
-
-<nav>
+    <head>
+        <meta charset="UTF-8">
+        <title>
+            {% block title %}Nantes en live{% endblock %}
+        </title>
+        <link href="Images/mic.svg" rel="icon" type="image/x-icon">
+        {% block stylesheets %}
+            <link rel="stylesheet" href="{{ asset('/main.css') }}" type="text/css"/>{% endblock %}
+        <link href="https://fonts.googleapis.com/css?family=Nunito|Roboto" rel="stylesheet">
+    </head>
+            {% block javascript %}
+                <script src="/script2.js" ></script>
+            {% endblock %}
+    <nav>
         <a class="banner" href="{{ path('home') }}"><img src="{{ asset('/images/banner.png') }}"></a>
         <ul>
-            <li>{% if is_granted('IS_AUTHENTICATED_FULLY') %}
-                    <a href="{{ path('logout_route') }}">Se déconnecter</a>
-                {% else %}
-                    <a href="{{ path('app_login') }}">Se connecter</a>
-            {% endif %}
-            </li>
-
             <li>
-            {% if is_granted('IS_AUTHENTICATED_FULLY') %}
-                <a href="{{ path('user_index') }}">{{ app.user.name }}</a>
-            {% else %}
-                <a href="{{ path('user_new') }}">S'inscrire</a>
-            {% endif %}
+                {% if is_granted('IS_AUTHENTICATED_FULLY') %}
+                    <a href="{{ path('logout_route') }}">Se déconnecter</a>
+                    {% else %}
+                    <a href="{{ path('app_login') }}">Se connecter</a>
+                {% endif %}
             </li>
-
-            <li><a href="{{ path('article_index') }}">Actus</a></li>
+            <li>
+                {% if is_granted('IS_AUTHENTICATED_FULLY') %}
+                    <a href="{{ path('user_index') }}">
+                        {{ app.user.name }}</a>
+                    {% else %}
+                    <a href="{{ path('user_new') }}">S'inscrire</a>
+                {% endif %}
+            </li>
+            <li>
+                <a href="{{ path('article_index') }}">Actus</a>
+            </li>
         </ul>
-        <div class="searchBar">{{ render(controller('App\\Controller\\SearchController::searchBar')) }}</div>
-
-     <div class="countdown"> 
-      {% block body %}
-    {% block javascript %}
-      <script src="/script2.js"></script>
-    
-<h1> Prochain évènement :</h1>
-        <span id="days"></span> 
-        <span id="hours"></span> 
-        <span id="minutes"></span> 
-        </p>
+        <div class="searchBar">
+            {{ render(controller('App\\Controller\\SearchController::searchBar')) }}</div>
+        <h1>
+            Prochain évènement :
+        </h1>
+        <div class="countdown">
         </div>
     </nav>
-{% endblock %}
-<main>
-   
-    <div class="body-form"><div class="form">
-            {% block page %}
-            {% endblock %}
-    </div></div>
+    <main>
+        {% block body %}
+            <div class="body-form">
+                <div class="form">
+                    {% block page %}{% endblock %}
+                </div>
+            </div>
+        {% endblock %}
+    </main>
+    {% block footer %}
+        <footer>
+            {{ render(controller('App\\Controller\\NewsletterController::new')) }}
+            <div class="contact-footer">
+                <h3>Nous contacter :</h3>
+                <ul>
+                    <li><img src="{{ asset('/images/facebook.svg') }}"></li>
+                    <li><img src="{{ asset('/images/Twitter.svg') }}"></li>
+                </ul>
+            </div>
+        </footer>
     {% endblock %}
-
-</main>
-
-{% block footer %}
-<footer>
-    {{ render(controller('App\\Controller\\NewsletterController::new')) }}
-    <div class="contact-footer">
-        <h3>Nous contacter :</h3>
-        <ul>
-            <li><img src="{{ asset('/images/facebook.svg') }}"></li>
-            <li><img src="{{ asset('/images/Twitter.svg') }}"></li>
-        </ul>
-
-    </div>
-</footer>
-{% endblock %}
-
 </html>
