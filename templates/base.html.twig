@@ -10,34 +10,42 @@
 
 </head>
 
-<nav>
-        <a class="banner" href="{{ path('home') }}"><img src="{{ asset('/images/banner.png') }}"></a>
-        <ul>
-            <li>{% if is_granted('IS_AUTHENTICATED_FULLY') %}
-                    <a href="{{ path('logout_route') }}">Se déconnecter</a>
-                {% else %}
-                    <a href="{{ path('app_login') }}">Se connecter</a>
-            {% endif %}
-            </li>
+<script src="{{ asset('/CD.js') }}"></script>
 
-            <li>
+<nav>
+
+    <a class="banner" href="{{ path('home') }}"><img src="{{ asset('/images/banner.png') }}"></a>
+
+    <ul>
+        <li>
+            {% if is_granted('IS_AUTHENTICATED_FULLY') %}
+                <a href="{{ path('logout_route') }}">Se déconnecter</a>
+            {% else %}
+                <a href="{{ path('app_login') }}">Se connecter</a>
+            {% endif %}
+        </li>
+
+        <li>
             {% if is_granted('IS_AUTHENTICATED_FULLY') %}
                 <a href="{{ path('user_index') }}">{{ app.user.name }}</a>
             {% else %}
                 <a href="{{ path('user_new') }}">S'inscrire</a>
             {% endif %}
-            </li>
+        </li>
 
-            <li><a href="{{ path('events') }}">Events</a></li>
+        <li><a href="{{ path('events') }}">Événements</a></li>
 
-            <li><a href="{{ path('article_index') }}">Actu</a></li>
+        <li><a href="{{ path('article_index') }}">Actualités</a></li>
+    </ul>
 
-        </ul>
-        <div class="searchBar">{{ render(controller('App\\Controller\\SearchController::searchBar')) }}</div>
-    </nav>
+    <div class="other">
+    <div class="searchBar">{{ render(controller('App\\Controller\\SearchController::searchBar')) }}</div>
+    <div class="countdown"><a href="{{ path('events') }}"><p class="displayCD"></p></a></div>
+    </div>
 
-<main>
+</nav>
     {% block body %}
+<main>
 
     <div class="body-form"><div class="form">
             {% block page %}
@@ -46,7 +54,6 @@
     {% endblock %}
 
 </main>
-{% block javascripts %} <script src="{{ asset('/script.js') }}"></script> {% endblock %}
 
 {% block footer %}
 <footer>

@@ -1,6 +1,6 @@
 'use strict'
 
-window.addEventListener('load', event=>{
+window.addEventListener('load', event => {
 
     let display = document.querySelector('#event')
     let url = new XMLHttpRequest()
@@ -10,12 +10,12 @@ window.addEventListener('load', event=>{
     url.send(null)
 
     let data = JSON.parse(url.response)
-    
+
     if (data) {
 
-        data.records.forEach( value => {
+        data.records.forEach(value => {
 
-            display.innerHTML += 
+            display.innerHTML +=
             `<ul>
             <li>
             <h4>${value.fields.nom}</h4>
@@ -28,6 +28,4 @@ window.addEventListener('load', event=>{
 
     }
 
-
-    
 })

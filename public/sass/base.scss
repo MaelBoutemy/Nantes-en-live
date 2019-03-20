@@ -64,7 +64,11 @@ body{
           }
         }
       }
-    .searchBar {
+    .countdown {
+      color: $white;
+      font-style: $title;
+    }
+    .other {
       display: none;
     }
 }
@@ -96,6 +100,10 @@ main {
     justify-content: space-around;
   }
 
+  .other {
+    display: flex;
+    flex-flow: column;
+    flex: 70%;
     .searchBar {
       display: flex;
       justify-content: center;
@@ -123,6 +131,18 @@ main {
         }
         }
       }
+      .countdown {
+        flex: 70%;
+        align-content: center;
+        justify-content: center;
+        .displayCD {
+          text-align: center;
+          color: $white;
+          font-family: $title;
+          font-weight: bold;
+        }
+      }
+    }
     }
 }
 

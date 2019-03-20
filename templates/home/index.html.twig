@@ -1,28 +1,19 @@
 {% extends 'base.html.twig' %}
-
-
-
 {% block body %}
-<html class="html">
-    <div class="home-page">
-
-
-
-    {% for message in app.flashes('Compte créé avec succès!') %}
-        <div class="flash-notice">
-            {{ message }}
+    <html class="html">
+        <div class="home-page">
+            <video src="{{ asset('/moove/vidHome.mov') }}" autoplay loop muted></video>
+            {% for message in app.flashes('Compte créé avec succès!') %}
+                <div class="flash-notice">
+                    {{ message }}
+                </div>
+            {% endfor %}
+            <div class="video">
+                <div class="about">
+                    <h2>Nantes en live</h2>le site d'actu musicale nantaise</div>
+            </div>
         </div>
-    {% endfor %}
-
-    <div class="video">
-
-        <div class="about"><h2>Nantes en live</h2>le site d'actu musicale nantaise</div>
-       <video src="{{ asset('/moove/vidHome.mov') }}" autoplay loop muted></video>
-
-    </div>
-
-    </div>
-{% endblock %}
-{% block footer %}
-</html>
+    {% endblock %}
+    {% block footer %}
+    </html>
 {% endblock %}
