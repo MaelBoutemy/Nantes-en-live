@@ -11,15 +11,21 @@ window.addEventListener('load', event => {
 
     let data = JSON.parse(url.response)
 
+    console.log(data.records);
+    
+
     if (data) {
 
         data.records.forEach(value => {
 
             display.innerHTML +=
             `<ul>
-            <li>
+            <li class ="events" >
             <h4>${value.fields.nom}</h4>
+            <div class="enventsContent">
             <p>${value.fields.description}</p>
+            <img  class"imgEvent" src="${value.fields.media_1}">
+            </div>
             <p>| Date: ${value.fields.date} -- Début: ${value.fields.heure_debut} -- Lieu: ${value.fields.adresse} -- Téléphone: ${value.fields.lieu_tel !== undefined ? value.fields.lieu_tel : "NC"} |</p>
             <p>| Tarif: ${value.fields.gratuit === "non" ? value.fields.precisions_tarifs : "Gratuit"} -- <a href="${value.fields.lieu_siteweb}">Site web</a> |</p>
             </li>
